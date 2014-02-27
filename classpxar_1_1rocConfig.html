@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>pxar: Main Page</title>
+<title>pxar: pxar::rocConfig Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -36,9 +36,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -58,7 +58,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-</div><!-- top -->
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -73,15 +80,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacepxar.html">pxar</a></li><li class="navelem"><a class="el" href="classpxar_1_1rocConfig.html">rocConfig</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="classpxar_1_1rocConfig-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pxar Documentation</div>  </div>
+<div class="title">pxar::rocConfig Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="datatypes_8h_source.html">datatypes.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a5cbdbfa067ad6384e52bd1ff99509cd9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cbdbfa067ad6384e52bd1ff99509cd9"></a>
+std::vector&lt; <a class="el" href="classpxar_1_1pixelConfig.html">pixelConfig</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pixels</b></td></tr>
+<tr class="separator:a5cbdbfa067ad6384e52bd1ff99509cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c588c2c3db66dfe3805ea80aa2a8d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1c588c2c3db66dfe3805ea80aa2a8d8"></a>
+std::map&lt; uint8_t, uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dacs</b></td></tr>
+<tr class="separator:ae1c588c2c3db66dfe3805ea80aa2a8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59b3247cb3b0f42fcdffff05f776c00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad59b3247cb3b0f42fcdffff05f776c00"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="separator:ad59b3247cb3b0f42fcdffff05f776c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c005c776ccca6514ca93ee29721f24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66c005c776ccca6514ca93ee29721f24"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>i2c_address</b></td></tr>
+<tr class="separator:a66c005c776ccca6514ca93ee29721f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567d2caacb704f4b245eb95d0b282517"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a567d2caacb704f4b245eb95d0b282517"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enable</b></td></tr>
+<tr class="separator:a567d2caacb704f4b245eb95d0b282517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for ROC states</p>
+<p>Contains a DAC map for the ROC programming settings, a type flag, enable switch and a vector of pixelConfigs. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/spanns/psi46/pxar/core/api/<a class="el" href="datatypes_8h_source.html">datatypes.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 27 2014 10:20:03 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 27 2014 10:20:02 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
