@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['tbmconfig',['tbmConfig',['../classpxar_1_1tbmConfig.html',1,'pxar']]],
-  ['testallpixels',['testAllPixels',['../classpxar_1_1dut.html#a79b4faf65b2296a4dda907ed3284e7ce',1,'pxar::dut::testAllPixels(bool enable)'],['../classpxar_1_1dut.html#a39c57dfd9069d5b101b276fdafabc5a2',1,'pxar::dut::testAllPixels(bool enable, uint8_t rocid)']]],
-  ['testpixel',['testPixel',['../classpxar_1_1dut.html#a08a6e724bd095b9142cf9c0701ca2a2d',1,'pxar::dut::testPixel(uint8_t column, uint8_t row, bool enable)'],['../classpxar_1_1dut.html#a533272561b8ab2f77efd706e046b39e1',1,'pxar::dut::testPixel(uint8_t column, uint8_t row, bool enable, uint8_t rocid)']]],
-  ['timer',['timer',['../classpxar_1_1timer.html#ac89deec4fe56144af111b607556844cd',1,'pxar::timer']]],
-  ['timer',['timer',['../classpxar_1_1timer.html',1,'pxar']]]
+  ['rawevent',['rawEvent',['../classpxar_1_1rawEvent.html',1,'pxar']]],
+  ['registerdictionary',['RegisterDictionary',['../classpxar_1_1RegisterDictionary.html',1,'pxar']]],
+  ['resetdirectory',['resetDirectory',['../classPixTest.html#aa865cb7bd8d0425e5a3fd0cff27d565a',1,'PixTest']]],
+  ['restore',['restore',['../classPixTest.html#a0c4c12c4bb0126e60eebae5cb43467f4',1,'PixTest']]],
+  ['rocconfig',['rocConfig',['../classpxar_1_1rocConfig.html',1,'pxar']]],
+  ['runcommand',['runCommand',['../classPixTest.html#a7d9731fdbe8b4b4937aeeea8fd857973',1,'PixTest::runCommand()'],['../classPixTestPretest.html#aa0484997a1e5766c29cc3fd338e5459b',1,'PixTestPretest::runCommand()'],['../classPixTestTrim.html#a31c9bb3f310cb19a7b5c4e06954b78d0',1,'PixTestTrim::runCommand()']]]
 ];
