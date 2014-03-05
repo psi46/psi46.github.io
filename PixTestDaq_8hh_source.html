@@ -93,35 +93,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;api.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;PixTest.hh&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classPixTestDaq.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPixTestDaq.html">PixTestDaq</a>: <span class="keyword">public</span> <a class="code" href="classPixTest.html">PixTest</a> {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <a class="code" href="classPixTestDaq.html">PixTestDaq</a>(PixSetup *, std::string);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="classPixTestDaq.html">PixTestDaq</a>();</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classPixTestDaq.html">PixTestDaq</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classPixTestDaq.html#a257a01d0bc39fbdcb93fbd140f7aa789">setParameter</a>(std::string parName, std::string sval); </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">void</span> init(); </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classPixTestDaq.html#aa8af23f7b3322073401d04dd532a99a7">setToolTips</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">void</span> bookHist(std::string); </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classPixTestDaq.html#af98aea372d3495ca46d10cfb626e5418">doTest</a>(); </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">int</span>     fParNtrig; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  ClassDef(<a class="code" href="classPixTestDaq.html">PixTestDaq</a>, 1);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classPixTestDaq_html_aa8af23f7b3322073401d04dd532a99a7"><div class="ttname"><a href="classPixTestDaq.html#aa8af23f7b3322073401d04dd532a99a7">PixTestDaq::setToolTips</a></div><div class="ttdeci">void setToolTips()</div><div class="ttdoc">implement this to provide updated tool tips if the user changes test parameters </div><div class="ttdef"><b>Definition:</b> PixTestDaq.cc:62</div></div>
-<div class="ttc" id="classPixTestDaq_html_af98aea372d3495ca46d10cfb626e5418"><div class="ttname"><a href="classPixTestDaq.html#af98aea372d3495ca46d10cfb626e5418">PixTestDaq::doTest</a></div><div class="ttdeci">void doTest()</div><div class="ttdoc">function connected to &quot;DoTest&quot; button of PixTab </div><div class="ttdef"><b>Definition:</b> PixTestDaq.cc:84</div></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span>pxar;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classPixTestDaq.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPixTestDaq.html">PixTestDaq</a>: <span class="keyword">public</span> <a class="code" href="classPixTest.html">PixTest</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="classPixTestDaq.html">PixTestDaq</a>(PixSetup *, std::string);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="classPixTestDaq.html">PixTestDaq</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classPixTestDaq.html">PixTestDaq</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> setParameter(std::string parName, std::string sval); </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">void</span> init(); </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> setToolTips();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">void</span> bookHist(std::string); </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> doTest(); </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">int</span>     fParNtrig; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  map&lt;int, int&gt; id2idx; <span class="comment">// map the ROC ID onto the index of the ROC</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  ClassDef(<a class="code" href="classPixTestDaq.html">PixTestDaq</a>, 1);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classPixTest_html"><div class="ttname"><a href="classPixTest.html">PixTest</a></div><div class="ttdef"><b>Definition:</b> PixTest.hh:41</div></div>
-<div class="ttc" id="classPixTestDaq_html_a257a01d0bc39fbdcb93fbd140f7aa789"><div class="ttname"><a href="classPixTestDaq.html#a257a01d0bc39fbdcb93fbd140f7aa789">PixTestDaq::setParameter</a></div><div class="ttdeci">virtual bool setParameter(std::string parName, std::string sval)</div><div class="ttdoc">set the string value of a parameter </div><div class="ttdef"><b>Definition:</b> PixTestDaq.cc:28</div></div>
-<div class="ttc" id="classPixTestDaq_html"><div class="ttname"><a href="classPixTestDaq.html">PixTestDaq</a></div><div class="ttdef"><b>Definition:</b> PixTestDaq.hh:7</div></div>
+<div class="ttc" id="classPixTestDaq_html"><div class="ttname"><a href="classPixTestDaq.html">PixTestDaq</a></div><div class="ttdef"><b>Definition:</b> PixTestDaq.hh:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 4 2014 10:30:16 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 5 2014 17:49:28 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

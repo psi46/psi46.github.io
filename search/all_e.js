@@ -37,6 +37,7 @@ var searchData=
   ['pixtestsetvana',['PixTestSetVana',['../classPixTestSetVana.html',1,'']]],
   ['pixtestshowiana',['PixTestShowIana',['../classPixTestShowIana.html',1,'']]],
   ['pixtesttbm',['PixTestTbm',['../classPixTestTbm.html',1,'']]],
+  ['pixtestthreshmap',['PixTestThreshMap',['../classPixTestThreshMap.html',1,'']]],
   ['pixtesttrim',['PixTestTrim',['../classPixTestTrim.html',1,'']]],
   ['pixusertestfactory',['PixUserTestFactory',['../classPixUserTestFactory.html',1,'']]],
   ['poff',['Poff',['../classpxar_1_1api.html#ac080c3ef5093ff30ca6671f743d6c467',1,'pxar::api']]],
