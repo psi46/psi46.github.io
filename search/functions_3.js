@@ -1,9 +1,11 @@
 var searchData=
 [
+  ['daqgetbuffer',['daqGetBuffer',['../classpxar_1_1api.html#aae2b47e011b7183c035c622387ac042c',1,'pxar::api']]],
   ['daqgetevent',['daqGetEvent',['../classpxar_1_1api.html#a5b445ef3d6bf1f843fe70c9c53d93498',1,'pxar::api']]],
   ['daqgeteventbuffer',['daqGetEventBuffer',['../classpxar_1_1api.html#a104814cc785a1ab0de89472565ddecc4',1,'pxar::api']]],
-  ['daqgetrawbuffer',['daqGetRawBuffer',['../classpxar_1_1api.html#a2802fa539743ab7992bac7f6af248b61',1,'pxar::api']]],
+  ['daqgetndecodererrors',['daqGetNDecoderErrors',['../classpxar_1_1api.html#a75ae8b6dfca3986e0a2feb3d93e0be2c',1,'pxar::api']]],
   ['daqgetrawevent',['daqGetRawEvent',['../classpxar_1_1api.html#af9f5ef5602daa4ae0e0d29d8df9f4536',1,'pxar::api']]],
+  ['daqgetraweventbuffer',['daqGetRawEventBuffer',['../classpxar_1_1api.html#a7a401d9499367f3ef017964c0df024c0',1,'pxar::api']]],
   ['daqstart',['daqStart',['../classpxar_1_1api.html#ab1b81df6fa931d29e1a4d52bc7547034',1,'pxar::api']]],
   ['daqstatus',['daqStatus',['../classpxar_1_1api.html#aed143f14b8031bbffb6b811e86099441',1,'pxar::api']]],
   ['daqstop',['daqStop',['../classpxar_1_1api.html#a1d6baafe5b75a1bec7b3c83df05e6a9c',1,'pxar::api']]],

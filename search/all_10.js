@@ -2,6 +2,7 @@ var searchData=
 [
   ['scurvemaps',['scurveMaps',['../classPixTest.html#af5bc1d928b32ffccc0f21f2453a972de',1,'PixTest']]],
   ['selectedroc',['selectedRoc',['../classPixTest.html#a493c7c6d23d0034dbea4ff9939c814b1',1,'PixTest']]],
+  ['setclockstretch',['setClockStretch',['../classpxar_1_1api.html#a0a38aa9275781112509909c3cd1c78db',1,'pxar::api']]],
   ['setdac',['setDAC',['../classpxar_1_1api.html#a2957f6c3d26d02d3e856d09a3856e79b',1,'pxar::api::setDAC(std::string dacName, uint8_t dacValue, uint8_t rocid)'],['../classpxar_1_1api.html#a7d333941a0f111a34b2e240eb599ed8d',1,'pxar::api::setDAC(std::string dacName, uint8_t dacValue)']]],
   ['setid2idx',['setId2Idx',['../classPixTest.html#ac2c7c18a15568ad4eb0456d5693a00dc',1,'PixTest']]],
   ['setlogoutput',['SetLogOutput',['../classpxar_1_1SetLogOutput.html',1,'pxar']]],

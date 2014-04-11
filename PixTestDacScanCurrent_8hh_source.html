@@ -93,35 +93,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;PixTest.hh&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classPixTestDacScanCurrent.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPixTestDacScanCurrent.html">PixTestDacScanCurrent</a>: <span class="keyword">public</span> <a class="code" href="classPixTest.html">PixTest</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classPixTestDacScanCurrent.html">    7</a></span>&#160;<span class="keyword">class </span>DLLEXPORT <a class="code" href="classPixTestDacScanCurrent.html">PixTestDacScanCurrent</a>: <span class="keyword">public</span> <a class="code" href="classPixTest.html">PixTest</a> {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <a class="code" href="classPixTestDacScanCurrent.html">PixTestDacScanCurrent</a>(PixSetup *, std::string);</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="classPixTestDacScanCurrent.html">PixTestDacScanCurrent</a>();</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classPixTestDacScanCurrent.html">PixTestDacScanCurrent</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classPixTestDacScanCurrent.html#ac14d8f6dbf2a055f9622e0f6b38b2f89">setParameter</a>(std::string parName, std::string sval); </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">void</span> init(); </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classPixTestDacScanCurrent.html#ae49eb1b330de9e9d1dbd6108421d12bb">setToolTips</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">void</span> bookHist(std::string); </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classPixTest.html#a4a93abb6102410b412c0a1d0dd5c9953">setParameter</a>(std::string parName, std::string sval); </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classPixTest.html#a58ed254809211288ac2b0082be4dec73">init</a>(); </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classPixTest.html#a44862621362c0765c417205af907bb5c">setToolTips</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classPixTest.html#a3422bc461b9c35744901c974a86f85d4">bookHist</a>(std::string); </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classPixTestDacScanCurrent.html#af459362295dc86c7a4854bafd539529d">doTest</a>(); </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classPixTest.html#a2279539fcc84f236f382f35b3b37b467">doTest</a>(); </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  std::string fParDAC; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  ClassDef(<a class="code" href="classPixTestDacScanCurrent.html">PixTestDacScanCurrent</a>, 1);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  ClassDef(<a class="code" href="classPixTestDacScanCurrent.html">PixTestDacScanCurrent</a>, 1)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classPixTestDacScanCurrent_html_af459362295dc86c7a4854bafd539529d"><div class="ttname"><a href="classPixTestDacScanCurrent.html#af459362295dc86c7a4854bafd539529d">PixTestDacScanCurrent::doTest</a></div><div class="ttdeci">void doTest()</div><div class="ttdoc">function connected to &quot;DoTest&quot; button of PixTab </div><div class="ttdef"><b>Definition:</b> PixTestDacScanCurrent.cc:113</div></div>
-<div class="ttc" id="classPixTestDacScanCurrent_html_ae49eb1b330de9e9d1dbd6108421d12bb"><div class="ttname"><a href="classPixTestDacScanCurrent.html#ae49eb1b330de9e9d1dbd6108421d12bb">PixTestDacScanCurrent::setToolTips</a></div><div class="ttdeci">void setToolTips()</div><div class="ttdoc">implement this to provide updated tool tips if the user changes test parameters </div><div class="ttdef"><b>Definition:</b> PixTestDacScanCurrent.cc:64</div></div>
-<div class="ttc" id="classPixTest_html"><div class="ttname"><a href="classPixTest.html">PixTest</a></div><div class="ttdef"><b>Definition:</b> PixTest.hh:41</div></div>
+<div class="ttc" id="classPixTest_html_a2279539fcc84f236f382f35b3b37b467"><div class="ttname"><a href="classPixTest.html#a2279539fcc84f236f382f35b3b37b467">PixTest::doTest</a></div><div class="ttdeci">virtual void doTest()</div><div class="ttdoc">function connected to &quot;DoTest&quot; button of PixTab </div><div class="ttdef"><b>Definition:</b> PixTest.cc:610</div></div>
+<div class="ttc" id="classPixTest_html_a3422bc461b9c35744901c974a86f85d4"><div class="ttname"><a href="classPixTest.html#a3422bc461b9c35744901c974a86f85d4">PixTest::bookHist</a></div><div class="ttdeci">void bookHist(std::string name)</div><div class="ttdoc">use if you want, or define the histograms in the specific member functions </div><div class="ttdef"><b>Definition:</b> PixTest.cc:67</div></div>
+<div class="ttc" id="classPixTest_html"><div class="ttname"><a href="classPixTest.html">PixTest</a></div><div class="ttdef"><b>Definition:</b> PixTest.hh:45</div></div>
+<div class="ttc" id="classPixTest_html_a44862621362c0765c417205af907bb5c"><div class="ttname"><a href="classPixTest.html#a44862621362c0765c417205af907bb5c">PixTest::setToolTips</a></div><div class="ttdeci">virtual void setToolTips()</div><div class="ttdoc">implement this to provide updated tool tips if the user changes test parameters </div><div class="ttdef"><b>Definition:</b> PixTest.cc:59</div></div>
+<div class="ttc" id="classPixTest_html_a4a93abb6102410b412c0a1d0dd5c9953"><div class="ttname"><a href="classPixTest.html#a4a93abb6102410b412c0a1d0dd5c9953">PixTest::setParameter</a></div><div class="ttdeci">virtual bool setParameter(std::string parName, std::string sval)</div><div class="ttdoc">set the string value of a parameter </div><div class="ttdef"><b>Definition:</b> PixTest.cc:538</div></div>
 <div class="ttc" id="classPixTestDacScanCurrent_html"><div class="ttname"><a href="classPixTestDacScanCurrent.html">PixTestDacScanCurrent</a></div><div class="ttdef"><b>Definition:</b> PixTestDacScanCurrent.hh:7</div></div>
-<div class="ttc" id="classPixTestDacScanCurrent_html_ac14d8f6dbf2a055f9622e0f6b38b2f89"><div class="ttname"><a href="classPixTestDacScanCurrent.html#ac14d8f6dbf2a055f9622e0f6b38b2f89">PixTestDacScanCurrent::setParameter</a></div><div class="ttdeci">virtual bool setParameter(std::string parName, std::string sval)</div><div class="ttdoc">set the string value of a parameter </div><div class="ttdef"><b>Definition:</b> PixTestDacScanCurrent.cc:31</div></div>
+<div class="ttc" id="classPixTest_html_a58ed254809211288ac2b0082be4dec73"><div class="ttname"><a href="classPixTest.html#a58ed254809211288ac2b0082be4dec73">PixTest::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">sets all test parameters </div><div class="ttdef"><b>Definition:</b> PixTest.cc:45</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 5 2014 17:49:28 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 11 2014 08:39:24 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

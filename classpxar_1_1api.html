@@ -107,8 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a195e13c554408d18bf84930feca5474f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc66f74e3811575cc0f27c1924b30f0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#acc66f74e3811575cc0f27c1924b30f0b">initTestboard</a> (std::vector&lt; std::pair&lt; std::string, uint8_t &gt; &gt; sig_delays, std::vector&lt; std::pair&lt; std::string, double &gt; &gt; power_settings, std::vector&lt; std::pair&lt; uint16_t, uint8_t &gt; &gt; pg_setup)</td></tr>
 <tr class="separator:acc66f74e3811575cc0f27c1924b30f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca4c8d1ffa253910f1118e9f86ddb05d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#aca4c8d1ffa253910f1118e9f86ddb05d">initDUT</a> (std::string tbmtype, std::vector&lt; std::vector&lt; std::pair&lt; std::string, uint8_t &gt; &gt; &gt; tbmDACs, std::string roctype, std::vector&lt; std::vector&lt; std::pair&lt; std::string, uint8_t &gt; &gt; &gt; rocDACs, std::vector&lt; std::vector&lt; <a class="el" href="classpxar_1_1pixelConfig.html">pixelConfig</a> &gt; &gt; rocPixels)</td></tr>
-<tr class="separator:aca4c8d1ffa253910f1118e9f86ddb05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6abb67ab06a875ba9bbd996b9ee701b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#af6abb67ab06a875ba9bbd996b9ee701b">initDUT</a> (uint8_t hubId, std::string tbmtype, std::vector&lt; std::vector&lt; std::pair&lt; std::string, uint8_t &gt; &gt; &gt; tbmDACs, std::string roctype, std::vector&lt; std::vector&lt; std::pair&lt; std::string, uint8_t &gt; &gt; &gt; rocDACs, std::vector&lt; std::vector&lt; <a class="el" href="classpxar_1_1pixelConfig.html">pixelConfig</a> &gt; &gt; rocPixels)</td></tr>
+<tr class="separator:af6abb67ab06a875ba9bbd996b9ee701b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a815fda43aaf919d5ff08bd4cede81eff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#a815fda43aaf919d5ff08bd4cede81eff">programDUT</a> ()</td></tr>
 <tr class="separator:a815fda43aaf919d5ff08bd4cede81eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2bfc59d3c5fa2d715a17346362f69b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#ae2bfc59d3c5fa2d715a17346362f69b9">flashTB</a> (std::string filename)</td></tr>
@@ -172,6 +172,8 @@ std::vector&lt; <a class="el" href="classpxar_1_1pixel.html">pixel</a> &gt; &gt;
 <tr class="memitem:a8b1d4721b0d8154be6c5f49e9aab743c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b1d4721b0d8154be6c5f49e9aab743c"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getReadbackValue</b> (std::string parameterName)</td></tr>
 <tr class="separator:a8b1d4721b0d8154be6c5f49e9aab743c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a38aa9275781112509909c3cd1c78db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#a0a38aa9275781112509909c3cd1c78db">setClockStretch</a> (uint8_t src, uint16_t delay, uint16_t width)</td></tr>
+<tr class="separator:a0a38aa9275781112509909c3cd1c78db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1b81df6fa931d29e1a4d52bc7547034"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#ab1b81df6fa931d29e1a4d52bc7547034">daqStart</a> (std::vector&lt; std::pair&lt; uint16_t, uint8_t &gt; &gt; pg_setup)</td></tr>
 <tr class="separator:ab1b81df6fa931d29e1a4d52bc7547034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed143f14b8031bbffb6b811e86099441"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#aed143f14b8031bbffb6b811e86099441">daqStatus</a> ()</td></tr>
@@ -186,10 +188,14 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getReadbackValue</
 <tr class="separator:a3b43798c983e348c801b232e6ac2e683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6baafe5b75a1bec7b3c83df05e6a9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#a1d6baafe5b75a1bec7b3c83df05e6a9c">daqStop</a> ()</td></tr>
 <tr class="separator:a1d6baafe5b75a1bec7b3c83df05e6a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2802fa539743ab7992bac7f6af248b61"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classpxar_1_1rawEvent.html">rawEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#a2802fa539743ab7992bac7f6af248b61">daqGetRawBuffer</a> ()</td></tr>
-<tr class="separator:a2802fa539743ab7992bac7f6af248b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a401d9499367f3ef017964c0df024c0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classpxar_1_1rawEvent.html">rawEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#a7a401d9499367f3ef017964c0df024c0">daqGetRawEventBuffer</a> ()</td></tr>
+<tr class="separator:a7a401d9499367f3ef017964c0df024c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae2b47e011b7183c035c622387ac042c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#aae2b47e011b7183c035c622387ac042c">daqGetBuffer</a> ()</td></tr>
+<tr class="separator:aae2b47e011b7183c035c622387ac042c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a104814cc785a1ab0de89472565ddecc4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classpxar_1_1Event.html">Event</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#a104814cc785a1ab0de89472565ddecc4">daqGetEventBuffer</a> ()</td></tr>
 <tr class="separator:a104814cc785a1ab0de89472565ddecc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ae8b6dfca3986e0a2feb3d93e0be2c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#a75ae8b6dfca3986e0a2feb3d93e0be2c">daqGetNDecoderErrors</a> ()</td></tr>
+<tr class="separator:a75ae8b6dfca3986e0a2feb3d93e0be2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0345a9e4b0644c5244a9ce508060e663"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpxar_1_1api.html#a0345a9e4b0644c5244a9ce508060e663">status</a> ()</td></tr>
 <tr class="separator:a0345a9e4b0644c5244a9ce508060e663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -231,7 +237,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Default constructor for the libpxar API</p>
-<p>Fetches a new HAL instance and opens the connection to the testboard specified in the "usbId" parameter. An asterisk as "usbId" acts as wildcard. If only one DTB is connected the algorithm will automatically connect to this board, if several are connected it will throw a warning. </p>
+<p>Fetches a new HAL instance and opens the connection to the testboard specified in the "usbId" parameter. An asterisk as "usbId" acts as wildcard. If only one DTB is connected the algorithm will automatically connect to this board, if several are connected it will give a warning.</p>
+<p>On issues with the USB connection, a <a class="el" href="classpxar_1_1UsbConnectionError.html">pxar::UsbConnectionError</a> is thrown. If the firmware on the DTB does not match the expected version for pxar, a <a class="el" href="classpxar_1_1FirmwareVersionMismatch.html">pxar::FirmwareVersionMismatch</a> exception is thrown. </p>
 
 </div>
 </div>
@@ -253,6 +260,22 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aae2b47e011b7183c035c622387ac042c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; uint16_t &gt; api::daqGetBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to return the full raw data buffer from the testboard RAM after the data acquisition has been stopped. Neither decoding nor splitting is performed, this function returns the raw data blob from either of the deserializer modules. </p>
+
+</div>
+</div>
 <a class="anchor" id="a5b445ef3d6bf1f843fe70c9c53d93498"></a>
 <div class="memitem">
 <div class="memproto">
@@ -285,19 +308,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2802fa539743ab7992bac7f6af248b61"></a>
+<a class="anchor" id="a75ae8b6dfca3986e0a2feb3d93e0be2c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classpxar_1_1rawEvent.html">rawEvent</a> &gt; api::daqGetRawBuffer </td>
+          <td class="memname">uint32_t api::daqGetNDecoderErrors </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Function to return the full <a class="el" href="classpxar_1_1Event.html">Event</a> buffer from the testboard RAM after the data acquisition has been stopped. No decoding is performed, this function returns the raw data blob from either of the deserializer modules. </p>
+<p>Function that returns the number of pixel decoding errors found in the last (non-raw) DAQ readout. </p>
 
 </div>
 </div>
@@ -314,6 +337,22 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Function to read out the earliest raw data record in buffer from the current data acquisition session. If no <a class="el" href="classpxar_1_1Event.html">Event</a> is buffered, the function will wait for the next <a class="el" href="classpxar_1_1Event.html">Event</a> to arrive and then return it. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7a401d9499367f3ef017964c0df024c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classpxar_1_1rawEvent.html">rawEvent</a> &gt; api::daqGetRawEventBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to return the full <a class="el" href="classpxar_1_1Event.html">Event</a> buffer from the testboard RAM after the data acquisition has been stopped. No decoding is performed, this function returns the raw data blob from either of the deserializer modules. </p>
 
 </div>
 </div>
@@ -461,7 +500,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Method to get a map of the efficiency</p>
-<p>Returns a vector of pixels, with the value of the pixel struct being the number of hits in that pixel. Efficiency == 1 for nhits == nTriggers </p>
+<p>Returns a vector of pixels, with the value of the pixel struct being the number of hits in that pixel. Efficiency == 1 for nhits == nTriggers</p>
+<p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
 </div>
 </div>
@@ -507,7 +547,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Method to scan a DAC range and measure the efficiency</p>
-<p>Returns a vector of pairs containing set dac value and pixels, with the value of the pixel struct being the number of hits in that pixel. Efficiency == 1 for nhits == nTriggers </p>
+<p>Returns a vector of pairs containing set dac value and pixels, with the value of the pixel struct being the number of hits in that pixel. Efficiency == 1 for nhits == nTriggers</p>
+<p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
 </div>
 </div>
@@ -571,7 +612,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Method to scan a 2D DAC-Range (DAC1 vs. DAC2) and measure the efficiency</p>
-<p>Returns a vector containing pairs of DAC1 values and pais of DAC2 values with a pixel vector. The value of the pixel struct is the number of hits in that pixel. Efficiency == 1 for nhits == nTriggers </p>
+<p>Returns a vector containing pairs of DAC1 values and pais of DAC2 values with a pixel vector. The value of the pixel struct is the number of hits in that pixel. Efficiency == 1 for nhits == nTriggers</p>
+<p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
 </div>
 </div>
@@ -599,7 +641,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Method to get a map of the pulse height</p>
-<p>Returns a vector of pixels, with the value of the pixel struct being the averaged pulse height over "nTriggers" triggers </p>
+<p>Returns a vector of pixels, with the value of the pixel struct being the averaged pulse height over "nTriggers" triggers</p>
+<p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
 </div>
 </div>
@@ -645,7 +688,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Method to scan a DAC range and measure the pulse height</p>
-<p>Returns a vector of pairs containing set dac value and a pixel vector, with the value of the pixel struct being the averaged pulse height over "nTriggers" triggers </p>
+<p>Returns a vector of pairs containing set dac value and a pixel vector, with the value of the pixel struct being the averaged pulse height over "nTriggers" triggers</p>
+<p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
 </div>
 </div>
@@ -709,7 +753,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Method to scan a 2D DAC-Range (DAC1 vs. DAC2) and measure the pulse height</p>
-<p>Returns a vector containing pairs of DAC1 values and pais of DAC2 values with a pixel vector. The value of the pixel struct is the averaged pulse height over "nTriggers" triggers. </p>
+<p>Returns a vector containing pairs of DAC1 values and pais of DAC2 values with a pixel vector. The value of the pixel struct is the averaged pulse height over "nTriggers" triggers.</p>
+<p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
 </div>
 </div>
@@ -825,7 +870,8 @@ Public Attributes</h2></td></tr>
 <p>Method to get a map of the pixel threshold</p>
 <p>Returns a vector of pixels, with the value of the pixel struct being the threshold value of that pixel.</p>
 <p>This function allows to specify a range for the threshold DAC to be searched, this can be used to speed up the procedure by limiting the range.</p>
-<p>The threshold is calculated as the 0.5 value of the s-curve of the pixel. </p>
+<p>The threshold is calculated as the 0.5 value of the s-curve of the pixel.</p>
+<p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
 </div>
 </div>
@@ -860,7 +906,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Method to get a map of the pixel threshold</p>
 <p>Returns a vector of pixels, with the value of the pixel struct being the threshold value of that pixel.</p>
-<p>The threshold is calculated as the 0.5 value of the s-curve of the pixel. </p>
+<p>The threshold is calculated as the 0.5 value of the s-curve of the pixel.</p>
+<p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
 </div>
 </div>
@@ -913,7 +960,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Method to scan a DAC range and measure the pixel threshold</p>
 <p>Returns a vector of pairs containing set dac value and pixels, with the value of the pixel struct being the threshold value of that pixel.</p>
-<p>The threshold is calculated as the 0.5 value of the s-curve of the pixel. </p>
+<p>The threshold is calculated as the 0.5 value of the s-curve of the pixel.</p>
+<p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
 </div>
 </div>
@@ -979,7 +1027,8 @@ Public Attributes</h2></td></tr>
 <p>Method to scan a DAC range and measure the pixel threshold</p>
 <p>Returns a vector of pairs containing set dac value and pixels, with the value of the pixel struct being the threshold value of that pixel.</p>
 <p>This function allows to specify a range for the threshold DAC to be searched, this can be used to speed up the procedure by limiting the range.</p>
-<p>The threshold is calculated as the 0.5 value of the s-curve of the pixel. </p>
+<p>The threshold is calculated as the 0.5 value of the s-curve of the pixel.</p>
+<p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
 </div>
 </div>
@@ -1033,13 +1082,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aca4c8d1ffa253910f1118e9f86ddb05d"></a>
+<a class="anchor" id="af6abb67ab06a875ba9bbd996b9ee701b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool api::initDUT </td>
           <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>hubId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>tbmtype</em>, </td>
         </tr>
@@ -1075,8 +1130,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Initializer method for the DUT (attached devices)</p>
-<p>This function requires the types and DAC settings for all TBMs and ROCs contained in the setup. All values will be checked for validity (DAC ranges, position and number of pixels, etc.)</p>
-<p>All parameters are supplied via vectors, the size of the vector represents the number of devices. DAC names and device types should be provided as strings. The respective register addresses will be looked up internally. Strings are checked case-insensitive, old and new DAC names are both supported. </p>
+<p>This function requires the types and DAC settings for all TBMs and ROCs contained in the setup. All values will be checked for validity (DAC ranges, position and number of pixels, etc.) and an <a class="el" href="classpxar_1_1InvalidConfig.html">pxar::InvalidConfig</a> exception is thrown if any errors are encountered.</p>
+<p>All parameters are supplied via vectors, the size of the vector represents the number of devices. DAC names and device types should be provided as strings. The respective register addresses will be looked up internally. Strings are checked case-insensitive, old and new DAC names are both supported.</p>
+<p>In case of USB communication problems, <a class="el" href="classpxar_1_1UsbConnectionError.html">pxar::UsbConnectionError</a> is thrown. </p>
 
 </div>
 </div>
@@ -1112,7 +1168,8 @@ Public Attributes</h2></td></tr>
 <p>Initializer method for the testboard</p>
 <p>Initializes the tesboard with signal delay settings, and voltage/current limit settings (power_settings) and the initial pattern generator setup (pg_setup), all provided via vectors of pairs with descriptive name.</p>
 <p>The name lookup is performed via the central API dictionaries.</p>
-<p>All user inputs are checked for sanity. This includes range checks on the current limits set, a sanity check for the pattern generator command list (including a check for delay = 0 at the end of the list). </p>
+<p>All user inputs are checked for sanity. This includes range checks on the current limits set, a sanity check for the pattern generator command list (including a check for delay = 0 at the end of the list). If the settings are found to be out-of-range, a <a class="el" href="classpxar_1_1InvalidConfig.html">pxar::InvalidConfig</a> exception is thrown.</p>
+<p>In case of USB communication problems, <a class="el" href="classpxar_1_1UsbConnectionError.html">pxar::UsbConnectionError</a> is thrown. </p>
 
 </div>
 </div>
@@ -1164,6 +1221,39 @@ Public Attributes</h2></td></tr>
 <p>This function requires the DUT structure to be filled (initialized).</p>
 <p>All parameters are taken from the DUT struct, the enabled devices are programmed. This function needs to be called after power cycling the testboard output (using Poff, Pon).</p>
 <p>A DUT flag is set which prEvents test functions to be executed if not programmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0a38aa9275781112509909c3cd1c78db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void api::setClockStretch </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>delay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>width</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the clock stretch. FIXME missing documentation A width of 0 disables the clock stretch </p>
 
 </div>
 </div>
@@ -1360,7 +1450,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 5 2014 17:49:41 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 11 2014 08:39:37 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
