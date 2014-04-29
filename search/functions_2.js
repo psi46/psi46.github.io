@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['cache',['cache',['../classPixTest.html#a2cc9310bb3680ebd62c86330d0a8c97b',1,'PixTest']]],
-  ['clearhistlist',['clearHistList',['../classPixTest.html#a380ffe5d8b789c9765cf09428fab3077',1,'PixTest']]]
+  ['cachedacs',['cacheDacs',['../classPixTest.html#a0e55eb89963ac4b0671846a217f49efb',1,'PixTest']]],
+  ['clearhistlist',['clearHistList',['../classPixTest.html#a380ffe5d8b789c9765cf09428fab3077',1,'PixTest']]],
+  ['clearselectedpixels',['clearSelectedPixels',['../classPixTest.html#a6b9238aa60242df30cb904983e49c601',1,'PixTest']]]
 ];

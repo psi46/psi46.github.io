@@ -1,13 +1,13 @@
 var searchData=
 [
   ['fapi',['fApi',['../classPixTest.html#acddc44661904b5c55e33a9f09ed5607f',1,'PixTest']]],
-  ['fcachedac',['fCacheDac',['../classPixTest.html#ac5625c32e0bf46ba1c10854ad4dd8542',1,'PixTest']]],
-  ['fcacheval',['fCacheVal',['../classPixTest.html#abf5b07e066d078485e787c8a0b8ad042',1,'PixTest']]],
+  ['fdaccache',['fDacCache',['../classPixTest.html#a73e74d5429cc64254eb26cbd98ff2425',1,'PixTest']]],
   ['fdirectory',['fDirectory',['../classPixTest.html#ac9b395930660e93c2812ad70bb0f7b0e',1,'PixTest']]],
   ['fdisplayedhist',['fDisplayedHist',['../classPixTest.html#a60a5a16e545cca3bacf2ad9c9bd8a320',1,'PixTest']]],
   ['fhistlist',['fHistList',['../classPixTest.html#adbd070a27e5299a4f2b80b948fbee131',1,'PixTest']]],
   ['fhistoptions',['fHistOptions',['../classPixTest.html#a7a5f2a44bd4582a276fe6ebdce7b8582',1,'PixTest']]],
   ['fid2idx',['fId2Idx',['../classPixTest.html#aa995a8917c313911b914f24f5548d50d',1,'PixTest']]],
+  ['filldachist',['fillDacHist',['../classPixTest.html#ad11c721cd3d99e34543613d5771f5e48',1,'PixTest']]],
   ['fillmap',['fillMap',['../classPixTest.html#aa717007bf2ed40c0db4d6704144fef60',1,'PixTest']]],
   ['findpixelbeyondxy',['findPixelBeyondXY',['../classpxar_1_1findPixelBeyondXY.html',1,'pxar']]],
   ['findpixelxy',['findPixelXY',['../classpxar_1_1findPixelXY.html',1,'pxar']]],
@@ -20,5 +20,6 @@ var searchData=
   ['fpixsetup',['fPixSetup',['../classPixTest.html#a00e08fccb21d6de2bbe5a8e3f612137c',1,'PixTest']]],
   ['fsigmae',['fSigmaE',['../classPixTest.html#a894967789141b3d25d6f7d1885b1abda',1,'PixTest']]],
   ['fsummarytip',['fSummaryTip',['../classPixTest.html#ad15d3e76279eb16789f84423fcdc602a',1,'PixTest']]],
-  ['ftestparameters',['fTestParameters',['../classPixTest.html#a9b03986f4f8e947ff32ed9dd67fa7767',1,'PixTest']]]
+  ['ftestparameters',['fTestParameters',['../classPixTest.html#a9b03986f4f8e947ff32ed9dd67fa7767',1,'PixTest']]],
+  ['fthresholdn',['fThresholdN',['../classPixTest.html#adf1ec022c33592de12bd4832937d99d8',1,'PixTest']]]
 ];

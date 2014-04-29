@@ -25,7 +25,6 @@ var searchData=
   ['pixtestmapph',['PixTestMapPh',['../classPixTestMapPh.html',1,'']]],
   ['pixtestmapthr',['PixTestMapThr',['../classPixTestMapThr.html',1,'']]],
   ['pixtestph',['PixTestPh',['../classPixTestPh.html',1,'']]],
-  ['pixtestphdacscan',['PixTestPhDacScan',['../classPixTestPhDacScan.html',1,'']]],
   ['pixtestpretest',['PixTestPretest',['../classPixTestPretest.html',1,'']]],
   ['pixtestscurves',['PixTestScurves',['../classPixTestScurves.html',1,'']]],
   ['pixtestsetcaldel',['PixTestSetCalDel',['../classPixTestSetCalDel.html',1,'']]],
