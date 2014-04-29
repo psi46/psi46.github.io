@@ -214,6 +214,8 @@ Public Attributes</h2></td></tr>
 <p>Unless otherwise specified (some DAQ functions allow this) all data returned from API functions is fully decoded and stored in C++ structures using std::vectors and std::pairs to ease its handling.</p>
 <p>Another concept implemented is the Device Under Test (DUT) which is a class representing the attached hardware to be tested. In order to change its configuration the user space code interacts with the _dut object and alters its settings. This is programmed into the devices automatically before the next test is executed. This approach allows both the efficient execution of many RPC calls at once and reading back the actual device configuration at any time during the tests.</p>
 <p>Calls to test functions are automatically expanded in a way that they cover the full device in the most efficient way available. Instead of scanning 4160 pixels after another the code will select the function to scan a full ROC in one go automatically. </p>
+
+<p>Definition at line <a class="el" href="api_8h_source.html#l00122">122</a> of file <a class="el" href="api_8h_source.html">api.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a532160655f47df5be07866cd81beff01"></a>
 <div class="memitem">
@@ -242,6 +244,8 @@ Public Attributes</h2></td></tr>
 <p>Fetches a new HAL instance and opens the connection to the testboard specified in the "usbId" parameter. An asterisk as "usbId" acts as wildcard. If only one DTB is connected the algorithm will automatically connect to this board, if several are connected it will give a warning.</p>
 <p>On issues with the USB connection, a <a class="el" href="classpxar_1_1UsbConnectionError.html">pxar::UsbConnectionError</a> is thrown. If the firmware on the DTB does not match the expected version for pxar, a <a class="el" href="classpxar_1_1FirmwareVersionMismatch.html">pxar::FirmwareVersionMismatch</a> exception is thrown. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00018">18</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae058b619d8a296efb9fb3523c0217210"></a>
@@ -258,6 +262,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Default destructor for libpxar API</p>
 <p>Will power down the DTB, disconnect properly from the testboard, and destroy the HAL object. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00038">38</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -276,6 +282,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the full raw data buffer from the testboard RAM after the data acquisition has been stopped. Neither decoding nor splitting is performed, this function returns the raw data blob from either of the deserializer modules. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01139">1139</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5b445ef3d6bf1f843fe70c9c53d93498"></a>
@@ -291,6 +299,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Function to read out the earliest <a class="el" href="classpxar_1_1Event.html">Event</a> in buffer from the current data acquisition session. If no <a class="el" href="classpxar_1_1Event.html">Event</a> is buffered, the function will wait for the next <a class="el" href="classpxar_1_1Event.html">Event</a> to arrive and then return it. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01188">1188</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -308,6 +318,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to return the full <a class="el" href="classpxar_1_1Event.html">Event</a> buffer from the testboard RAM after the data acquisition has been stopped. All data is decoded and the function returns decoded pixels separated in Events with additional header information available. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01167">1167</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a75ae8b6dfca3986e0a2feb3d93e0be2c"></a>
@@ -323,6 +335,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Function that returns the number of pixel decoding errors found in the last (non-raw) DAQ readout. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01206">1206</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -340,6 +354,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to read out the earliest raw data record in buffer from the current data acquisition session. If no <a class="el" href="classpxar_1_1Event.html">Event</a> is buffered, the function will wait for the next <a class="el" href="classpxar_1_1Event.html">Event</a> to arrive and then return it. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01197">1197</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7a401d9499367f3ef017964c0df024c0"></a>
@@ -355,6 +371,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Function to return the full <a class="el" href="classpxar_1_1Event.html">Event</a> buffer from the testboard RAM after the data acquisition has been stopped. No decoding is performed, this function returns the raw data blob from either of the deserializer modules. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01150">1150</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -374,6 +392,8 @@ Public Attributes</h2></td></tr>
 <p>Function to set up and initialize a new data acquisition session (DAQ)</p>
 <p>This function takes a new Pattern Generator setup as argument, if left empty the one which is currently programmed via the <a class="el" href="classpxar_1_1api.html#acc66f74e3811575cc0f27c1924b30f0b">api::initTestboard</a> function is used. The given pattern generator only lives for the time of the data acquisition and is replaced by the previous one after stopping the DAQ. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01057">1057</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aed143f14b8031bbffb6b811e86099441"></a>
@@ -390,6 +410,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to get back the DAQ status</p>
 <p>For a running DAQ with free buffer memory left, this function returns TRUE. In case of a problem with the DAQ (not started, buffer overflow or full...) it returns FALSE. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01095">1095</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -408,6 +430,8 @@ Public Attributes</h2></td></tr>
 <p>Function to stop the running data acquisition</p>
 <p>This triggers also a reprogramming of the old (test-) Pattern Generator setup, so no additional steps are needed before one can do regular tests again. The patterns are taken from the DUT struct in which they are stored by the <a class="el" href="classpxar_1_1api.html#acc66f74e3811575cc0f27c1924b30f0b">api::initTestboard</a> function. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01211">1211</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aae878d6092bce52491ea3866dcc1e450"></a>
@@ -424,6 +448,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Function to fire the previously defined pattern command list "nTrig" times, the function parameter defaults to 1. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01116">1116</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -442,6 +468,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to fire the previously defined pattern command list continuously every "period" clock cycles (default: 1000) </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01124">1124</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae2bfc59d3c5fa2d715a17346362f69b9"></a>
@@ -459,6 +487,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to flash a new firmware onto the DTB via the USB connection. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00358">358</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="abf48a6d4a16873dbe6684e89637cb437"></a>
@@ -475,6 +505,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get the valid range of a given DAC </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00549">549</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -504,6 +536,8 @@ Public Attributes</h2></td></tr>
 <p>Method to get a map of the efficiency</p>
 <p>Returns a vector of pixels, with the value of the pixel struct being the number of hits in that pixel. Efficiency == 1 for nhits == nTriggers</p>
 <p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00969">969</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -551,6 +585,8 @@ Public Attributes</h2></td></tr>
 <p>Method to scan a DAC range and measure the efficiency</p>
 <p>Returns a vector of pairs containing set dac value and pixels, with the value of the pixel struct being the number of hits in that pixel. Efficiency == 1 for nhits == nTriggers</p>
 <p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00676">676</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -617,6 +653,8 @@ Public Attributes</h2></td></tr>
 <p>Returns a vector containing pairs of DAC1 values and pais of DAC2 values with a pixel vector. The value of the pixel struct is the number of hits in that pixel. Efficiency == 1 for nhits == nTriggers</p>
 <p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00874">874</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab5979221f4d423c3e27cd74e5c576c78"></a>
@@ -640,6 +678,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Function to return the full <a class="el" href="classpxar_1_1Event.html">Event</a> buffer from the testboard RAM after a call </p>
+
+<p>Definition at line <a class="el" href="api_8h_source.html#l00538">538</a> of file <a class="el" href="api_8h_source.html">api.h</a>.</p>
 
 </div>
 </div>
@@ -669,6 +709,8 @@ Public Attributes</h2></td></tr>
 <p>Method to get a map of the pulse height</p>
 <p>Returns a vector of pixels, with the value of the pixel struct being the averaged pulse height over "nTriggers" triggers</p>
 <p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00943">943</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -716,6 +758,8 @@ Public Attributes</h2></td></tr>
 <p>Method to scan a DAC range and measure the pulse height</p>
 <p>Returns a vector of pairs containing set dac value and a pixel vector, with the value of the pixel struct being the averaged pulse height over "nTriggers" triggers</p>
 <p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00622">622</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -782,6 +826,8 @@ Public Attributes</h2></td></tr>
 <p>Returns a vector containing pairs of DAC1 values and pais of DAC2 values with a pixel vector. The value of the pixel struct is the averaged pulse height over "nTriggers" triggers.</p>
 <p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00805">805</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1f835d006cf6588816994960cec35384"></a>
@@ -798,6 +844,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to read out analog DUT supply current on the testboard</p>
 <p>The current will be returned in units of Ampere </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00385">385</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -816,6 +864,8 @@ Public Attributes</h2></td></tr>
 <p>Function to read out digital DUT supply current on the testboard</p>
 <p>The current will be returned in units of Ampere </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00395">395</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad2fd66daf14894c4e2d6805fda7f8292"></a>
@@ -833,6 +883,8 @@ Public Attributes</h2></td></tr>
 <p>Function to read out analog DUT supply voltage on the testboard</p>
 <p>The voltage will be returned in units of Volts </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00390">390</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6f04d48fd90d8f7e67a66164cd5a0a66"></a>
@@ -849,6 +901,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to read out digital DUT supply voltage on the testboard</p>
 <p>The voltage will be returned in units of Volts </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00400">400</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -899,6 +953,8 @@ Public Attributes</h2></td></tr>
 <p>The threshold is calculated as the 0.5 value of the s-curve of the pixel.</p>
 <p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01009">1009</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5968f51ed91af49cc27b30dfa90d2b04"></a>
@@ -934,6 +990,8 @@ Public Attributes</h2></td></tr>
 <p>Returns a vector of pixels, with the value of the pixel struct being the threshold value of that pixel.</p>
 <p>The threshold is calculated as the 0.5 value of the s-curve of the pixel.</p>
 <p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01002">1002</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -988,6 +1046,8 @@ Public Attributes</h2></td></tr>
 <p>Returns a vector of pairs containing set dac value and pixels, with the value of the pixel struct being the threshold value of that pixel.</p>
 <p>The threshold is calculated as the 0.5 value of the s-curve of the pixel.</p>
 <p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00728">728</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -1056,6 +1116,8 @@ Public Attributes</h2></td></tr>
 <p>The threshold is calculated as the 0.5 value of the s-curve of the pixel.</p>
 <p>If the readout of the DTB is corrupt, a <a class="el" href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a> is thrown. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00735">735</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a195e13c554408d18bf84930feca5474f"></a>
@@ -1074,6 +1136,8 @@ Public Attributes</h2></td></tr>
 <p>When using a git checkout the version number will be calculated at compile time from the latest tagged version plus the number of commits on top of that. In this case the version number also contains the commit hash of the latest commit for reference.</p>
 <p>In case of a tarball install the version number is hardcoded in the CMakeLists.txt file. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00043">43</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1e888286effd8c64df5fe7e3131ee808"></a>
@@ -1090,6 +1154,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>turn off HV </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00406">406</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9251daaf8f35b3736413f49db61c9099"></a>
@@ -1105,6 +1171,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>turn on HV </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00410">410</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -1160,6 +1228,8 @@ Public Attributes</h2></td></tr>
 <p>All parameters are supplied via vectors, the size of the vector represents the number of devices. DAC names and device types should be provided as strings. The respective register addresses will be looked up internally. Strings are checked case-insensitive, old and new DAC names are both supported.</p>
 <p>In case of USB communication problems, <a class="el" href="classpxar_1_1UsbConnectionError.html">pxar::UsbConnectionError</a> is thrown. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00123">123</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="acc66f74e3811575cc0f27c1924b30f0b"></a>
@@ -1197,6 +1267,8 @@ Public Attributes</h2></td></tr>
 <p>All user inputs are checked for sanity. This includes range checks on the current limits set, a sanity check for the pattern generator command list (including a check for delay = 0 at the end of the list). If the settings are found to be out-of-range, a <a class="el" href="classpxar_1_1InvalidConfig.html">pxar::InvalidConfig</a> exception is thrown.</p>
 <p>In case of USB communication problems, <a class="el" href="classpxar_1_1UsbConnectionError.html">pxar::UsbConnectionError</a> is thrown. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00045">45</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac080c3ef5093ff30ca6671f743d6c467"></a>
@@ -1213,6 +1285,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>turn off power </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00414">414</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad0aee46f028230d61eac9a2fc49bdb77"></a>
@@ -1228,6 +1302,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>turn on power </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00420">420</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -1247,6 +1323,8 @@ Public Attributes</h2></td></tr>
 <p>This function requires the DUT structure to be filled (initialized).</p>
 <p>All parameters are taken from the DUT struct, the enabled devices are programmed. This function needs to be called after power cycling the testboard output (using Poff, Pon).</p>
 <p>A DUT flag is set which prEvents test functions to be executed if not programmed. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00264">264</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -1280,6 +1358,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Set the clock stretch. FIXME missing documentation A width of 0 disables the clock stretch </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l01806">1806</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -1316,6 +1396,8 @@ Public Attributes</h2></td></tr>
 <p>The "rocid" parameter can be used to select a specific ROC to program.</p>
 <p>This function will both update the bookkeeping value in the DUT struct and program the actual device. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00489">489</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7d333941a0f111a34b2e240eb599ed8d"></a>
@@ -1343,6 +1425,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set a DAC value on the DUT for all enabled ROC</p>
 <p>This function will both update the bookkeeping value in the DUT struct and program the actual device. </p>
+
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00520">520</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
 
 </div>
 </div>
@@ -1379,6 +1463,8 @@ Public Attributes</h2></td></tr>
 <p>The "tbmid" parameter can be used to select a specific TBM to program. This function will both update the bookkeeping value in the DUT struct and program the actual device.</p>
 <p>This function will set the respective register always in both cores of the TBM specified. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00563">563</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aea1dbe19cda603d6f6a8e06c320efccc"></a>
@@ -1408,6 +1494,8 @@ Public Attributes</h2></td></tr>
 <p>This function will both update the bookkeeping value in the DUT struct and program the actual device.</p>
 <p>This function will set the respective register always in both cores of all TBMs configured in the DUT. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00594">594</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3f307ef8bd741e41277882a48b776eed"></a>
@@ -1436,6 +1524,8 @@ Public Attributes</h2></td></tr>
 <p>Selects "signal" as output for the DTB probe channel "probe" (digital or analog)</p>
 <p>The signal identifier is checked against a dictionary to be valid. In case of an invalid signal identifier the output is turned off. </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00426">426</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0345a9e4b0644c5244a9ce508060e663"></a>
@@ -1453,6 +1543,8 @@ Public Attributes</h2></td></tr>
 <p>Status function for the API</p>
 <p>Returns true if everything is setup correctly for operation </p>
 
+<p>Definition at line <a class="el" href="api_8cc_source.html#l00300">300</a> of file <a class="el" href="api_8cc_source.html">api.cc</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1467,16 +1559,18 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>DUT object for book keeping of settings </p>
 
+<p>Definition at line <a class="el" href="api_8h_source.html#l00542">542</a> of file <a class="el" href="api_8h_source.html">api.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>core/api/<a class="el" href="api_8h_source.html">api.h</a></li>
-<li>core/api/api.cc</li>
+<li>core/api/<a class="el" href="api_8cc_source.html">api.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 29 2014 09:09:46 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 29 2014 09:15:51 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
