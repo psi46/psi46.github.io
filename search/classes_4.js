@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['findpixelbeyondxy',['findPixelBeyondXY',['../classpxar_1_1findPixelBeyondXY.html',1,'pxar']]],
-  ['findpixelxy',['findPixelXY',['../classpxar_1_1findPixelXY.html',1,'pxar']]],
-  ['findroc',['findRoc',['../classpxar_1_1findRoc.html',1,'pxar']]],
-  ['firmwareversionmismatch',['FirmwareVersionMismatch',['../classpxar_1_1FirmwareVersionMismatch.html',1,'pxar']]]
+  ['event',['Event',['../classpxar_1_1Event.html',1,'pxar']]]
 ];

@@ -136,9 +136,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setPgSettings
 <tr class="memitem:aedc20d9893c2cf4b1bd134465519bc71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedc20d9893c2cf4b1bd134465519bc71"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setTbmParameter</b> ()</td></tr>
 <tr class="separator:aedc20d9893c2cf4b1bd134465519bc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44173fee1b3675b6ef589b48e6e1b1e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44173fee1b3675b6ef589b48e6e1b1e4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setRocParameter</b> ()</td></tr>
-<tr class="separator:a44173fee1b3675b6ef589b48e6e1b1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a980eca47169782c40322c56084acf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7a980eca47169782c40322c56084acf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setOneRocParameter</b> ()</td></tr>
+<tr class="separator:aa7a980eca47169782c40322c56084acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc0cb3bf3b2045c9f58ea68dffbe732"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabc0cb3bf3b2045c9f58ea68dffbe732"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setAllRocParameter</b> ()</td></tr>
+<tr class="separator:aabc0cb3bf3b2045c9f58ea68dffbe732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeed6031feafbe41135362583033a228"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adeed6031feafbe41135362583033a228"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setLemo</b> ()</td></tr>
 <tr class="separator:adeed6031feafbe41135362583033a228"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +187,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>tbYellow</b> ()</td><
 <tr class="memitem:a696851f8db1c338925a22c213ad9e311"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a696851f8db1c338925a22c213ad9e311"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>powerYellow</b> ()</td></tr>
 <tr class="separator:a696851f8db1c338925a22c213ad9e311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5decb574145ab51a10a97ecd43379e4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5decb574145ab51a10a97ecd43379e4f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>lockClk</b> ()</td></tr>
+<tr class="separator:a5decb574145ab51a10a97ecd43379e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -248,23 +254,16 @@ std::vector&lt; TGCheckButton * &gt;&#160;</td><td class="memItemRight" valign="
 <tr class="memitem:a4c63706773df274d39e2ecab2a2d1f93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c63706773df274d39e2ecab2a2d1f93"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>fSelectedTbm</b></td></tr>
 <tr class="separator:a4c63706773df274d39e2ecab2a2d1f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4be5a5c242561c375a47013402800f16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4be5a5c242561c375a47013402800f16"></a>
-std::map&lt; std::string, <br class="typebreak"/>
-TGTextEntry * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fRocTextEntries</b></td></tr>
-<tr class="separator:a4be5a5c242561c375a47013402800f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73b425937b987342a3326d82f0341c2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73b425937b987342a3326d82f0341c2a"></a>
-std::map&lt; int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fRocTextMap</b></td></tr>
-<tr class="separator:a73b425937b987342a3326d82f0341c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb03ad35c25b98811ce9f9a767fa080c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb03ad35c25b98811ce9f9a767fa080c"></a>
+<tr class="memitem:a934a420f979258fc4d1609a5590989eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a934a420f979258fc4d1609a5590989eb"></a>
+std::set&lt; TGTextEntry * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fRocChanges</b></td></tr>
+<tr class="separator:a934a420f979258fc4d1609a5590989eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdbf0516d49b4f0dd06ba0d9cf75511"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcdbf0516d49b4f0dd06ba0d9cf75511"></a>
 std::vector&lt; std::map<br class="typebreak"/>
-&lt; std::string, uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fRocParIds</b></td></tr>
-<tr class="separator:afb03ad35c25b98811ce9f9a767fa080c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&lt; std::string, TGTextEntry * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fRocTextEntries</b></td></tr>
+<tr class="separator:afcdbf0516d49b4f0dd06ba0d9cf75511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a5da61cf263eea8ab0b3881029f8d62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a5da61cf263eea8ab0b3881029f8d62"></a>
 std::vector&lt; TGCheckButton * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fSelectRoc</b></td></tr>
 <tr class="separator:a4a5da61cf263eea8ab0b3881029f8d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29846f5a489817888247da7b34a29949"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29846f5a489817888247da7b34a29949"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>fSelectedRoc</b></td></tr>
-<tr class="separator:a29846f5a489817888247da7b34a29949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b09f5f139bb9701057b7e830500cdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34b09f5f139bb9701057b7e830500cdf"></a>
 <a class="el" href="classPixGui.html">PixGui</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>fGui</b></td></tr>
 <tr class="separator:a34b09f5f139bb9701057b7e830500cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,6 +282,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fBorderT</b></td></tr>
 <tr class="memitem:af5fb74e9e7c7e166de77e8a416597894"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5fb74e9e7c7e166de77e8a416597894"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>fBorderB</b></td></tr>
 <tr class="separator:af5fb74e9e7c7e166de77e8a416597894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ebaf234c1efda9648384242f1e7ec5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6ebaf234c1efda9648384242f1e7ec5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fLockClk</b></td></tr>
+<tr class="separator:ad6ebaf234c1efda9648384242f1e7ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -292,7 +294,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>TABNUMBER
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="PixParTab_8hh_source.html#l00023">23</a> of file <a class="el" href="PixParTab_8hh_source.html">PixParTab.hh</a>.</p>
+<p>Definition at line <a class="el" href="PixParTab_8hh_source.html#l00024">24</a> of file <a class="el" href="PixParTab_8hh_source.html">PixParTab.hh</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>gui/<a class="el" href="PixParTab_8hh_source.html">PixParTab.hh</a></li>
 <li>gui/<a class="el" href="PixParTab_8cc_source.html">PixParTab.cc</a></li>
@@ -300,7 +302,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>TABNUMBER
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 26 2014 18:11:57 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 3 2015 10:03:42 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

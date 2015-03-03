@@ -138,10 +138,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>adjustVcal</b> ()</td
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTestScurves.html#add96118786f7f560743a9948a5bad7ac">doTest</a> ()</td></tr>
 <tr class="memdesc:add96118786f7f560743a9948a5bad7ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">function connected to "DoTest" button of <a class="el" href="classPixTab.html">PixTab</a> <br/></td></tr>
 <tr class="separator:add96118786f7f560743a9948a5bad7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb946c9543c273f98216146d31f1d7c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb946c9543c273f98216146d31f1d7c2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTestScurves.html#afb946c9543c273f98216146d31f1d7c2">output4moreweb</a> ()</td></tr>
-<tr class="memdesc:afb946c9543c273f98216146d31f1d7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">create output suitable for moreweb <br/></td></tr>
-<tr class="separator:afb946c9543c273f98216146d31f1d7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353727e34e8b03ffee2438b034eb9353"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a353727e34e8b03ffee2438b034eb9353"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTestScurves.html#a353727e34e8b03ffee2438b034eb9353">fullTest</a> ()</td></tr>
+<tr class="memdesc:a353727e34e8b03ffee2438b034eb9353"><td class="mdescLeft">&#160;</td><td class="mdescRight">function called when FullTest is running; most often this is simply calling <a class="el" href="classPixTestScurves.html#add96118786f7f560743a9948a5bad7ac" title="function connected to &quot;DoTest&quot; button of PixTab ">doTest()</a> <br/></td></tr>
+<tr class="separator:a353727e34e8b03ffee2438b034eb9353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classPixTest"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classPixTest')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classPixTest.html">PixTest</a></td></tr>
 <tr class="memitem:a244d931ba01b624f6e5352dcffee0142 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a244d931ba01b624f6e5352dcffee0142"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a244d931ba01b624f6e5352dcffee0142">PixTest</a> (<a class="el" href="classPixSetup.html">PixSetup</a> *a, std::string name)</td></tr>
@@ -175,11 +175,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#ac0d80299a0ab5cd5e7845076b13c0248">saveTbParameters</a> ()</td></tr>
 <tr class="memdesc:ac0d80299a0ab5cd5e7845076b13c0248 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">save TB parameters to file <br/></td></tr>
 <tr class="separator:ac0d80299a0ab5cd5e7845076b13c0248 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9deeeb9a15fe57ad0e057909cfeac10 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9deeeb9a15fe57ad0e057909cfeac10"></a>
+<tr class="memitem:a4d89f148548366fdcc978f251851224d inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d89f148548366fdcc978f251851224d"></a>
 std::vector&lt; std::vector<br class="typebreak"/>
-&lt; std::pair&lt; int, int &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#af9deeeb9a15fe57ad0e057909cfeac10">deadPixels</a> (int ntrig)</td></tr>
-<tr class="memdesc:af9deeeb9a15fe57ad0e057909cfeac10 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">create vector (per ROC) of vector of dead pixels <br/></td></tr>
-<tr class="separator:af9deeeb9a15fe57ad0e057909cfeac10 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&lt; std::pair&lt; int, int &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a4d89f148548366fdcc978f251851224d">deadPixels</a> (int ntrig, bool scanCalDel=false)</td></tr>
+<tr class="memdesc:a4d89f148548366fdcc978f251851224d inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">create vector (per ROC) of vector of dead pixels <br/></td></tr>
+<tr class="separator:a4d89f148548366fdcc978f251851224d inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348d14a243702117d5ebda3c5c12ce8d inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a348d14a243702117d5ebda3c5c12ce8d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a348d14a243702117d5ebda3c5c12ce8d">maskPixels</a> ()</td></tr>
+<tr class="memdesc:a348d14a243702117d5ebda3c5c12ce8d inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">mask all pixels mentioned in the mask file <br/></td></tr>
+<tr class="separator:a348d14a243702117d5ebda3c5c12ce8d inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f32bf8185f0f6b6bcee8cc2cd3dc5b inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08f32bf8185f0f6b6bcee8cc2cd3dc5b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a08f32bf8185f0f6b6bcee8cc2cd3dc5b">testProblem</a> ()</td></tr>
+<tr class="memdesc:a08f32bf8185f0f6b6bcee8cc2cd3dc5b inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">query whether test 'failed' <br/></td></tr>
+<tr class="separator:a08f32bf8185f0f6b6bcee8cc2cd3dc5b inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a889fdca5d54976a8dde996dbaa378898 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a889fdca5d54976a8dde996dbaa378898"></a>
 virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a889fdca5d54976a8dde996dbaa378898">getStopTip</a> ()</td></tr>
 <tr class="memdesc:a889fdca5d54976a8dde996dbaa378898 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">hint to what happens if the user hits the "stop" button <br/></td></tr>
@@ -200,24 +208,32 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class=
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#aea13ead2d74bbdf0da412c27a9648962">pixelThreshold</a> (std::string dac, int ntrig, int dacmin, int dacmax)</td></tr>
 <tr class="memdesc:aea13ead2d74bbdf0da412c27a9648962 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">work-around to cope with suboptimal pxar/core <br/></td></tr>
 <tr class="separator:aea13ead2d74bbdf0da412c27a9648962 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a699fa6268dc811fc468e0469cfda2d9f inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a699fa6268dc811fc468e0469cfda2d9f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a699fa6268dc811fc468e0469cfda2d9f">dacScan</a> (std::string dac, int ntrig, int dacmin, int dacmax, std::vector&lt; std::vector&lt; TH1 * &gt; &gt; maps, int ihit, int flag=0)</td></tr>
-<tr class="memdesc:a699fa6268dc811fc468e0469cfda2d9f inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">kind of another work-around (splitting the range, adjusting ntrig, etc) <br/></td></tr>
-<tr class="separator:a699fa6268dc811fc468e0469cfda2d9f inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4190173cee71c754e7541822d1092d9 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4190173cee71c754e7541822d1092d9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#ad4190173cee71c754e7541822d1092d9">scurveAna</a> (std::string dac, std::string name, std::vector&lt; std::vector&lt; TH1 * &gt; &gt; maps, std::vector&lt; TH1 * &gt; &amp;resultMaps, int result)</td></tr>
-<tr class="memdesc:ad4190173cee71c754e7541822d1092d9 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">do the scurve analysis <br/></td></tr>
-<tr class="separator:ad4190173cee71c754e7541822d1092d9 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5bbadf8f4979cf39ae7d1c3402d32f inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba5bbadf8f4979cf39ae7d1c3402d32f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#aba5bbadf8f4979cf39ae7d1c3402d32f">dacScan</a> (std::string dac, int ntrig, int dacmin, int dacmax, std::vector&lt; <a class="el" href="classshist256.html">shist256</a> * &gt; maps, int ihit, int flag=0)</td></tr>
+<tr class="memdesc:aba5bbadf8f4979cf39ae7d1c3402d32f inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">scan a dac range. Will call preScan to protect against r/o problems. <br/></td></tr>
+<tr class="separator:aba5bbadf8f4979cf39ae7d1c3402d32f inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb408ee1499ed64136b89991509a0258 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb408ee1499ed64136b89991509a0258"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#abb408ee1499ed64136b89991509a0258">preScan</a> (std::string dac, std::vector&lt; <a class="el" href="classshist256.html">shist256</a> * &gt; maps, int &amp;dacmin, int &amp;dacmax)</td></tr>
+<tr class="memdesc:abb408ee1499ed64136b89991509a0258 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">kind of another work-around (splitting the range, adjusting ntrig, etc) <br/></td></tr>
+<tr class="separator:abb408ee1499ed64136b89991509a0258 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834284919351b3734e7865519a2f25eb inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a834284919351b3734e7865519a2f25eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a834284919351b3734e7865519a2f25eb">scurveAna</a> (std::string dac, std::string name, std::vector&lt; <a class="el" href="classshist256.html">shist256</a> * &gt; maps, std::vector&lt; TH1 * &gt; &amp;resultMaps, int result)</td></tr>
+<tr class="memdesc:a834284919351b3734e7865519a2f25eb inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">do the scurve analysis <br/></td></tr>
+<tr class="separator:a834284919351b3734e7865519a2f25eb inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f51d2d30c9c85ed4701401050e66454 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f51d2d30c9c85ed4701401050e66454"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a9f51d2d30c9c85ed4701401050e66454">getPhError</a> (std::string dac, int dacmin, int dacmax, int FLAGS, int ntrig)</td></tr>
 <tr class="memdesc:a9f51d2d30c9c85ed4701401050e66454 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine PH error interpolation <br/></td></tr>
 <tr class="separator:a9f51d2d30c9c85ed4701401050e66454 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fd7cafa435f5347e02834a91d8f409a inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fd7cafa435f5347e02834a91d8f409a"></a>
+std::vector&lt; TH2D * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a5fd7cafa435f5347e02834a91d8f409a">phMaps</a> (std::string name, uint16_t ntrig=10, uint16_t FLAGS=FLAG_FORCE_MASKED)</td></tr>
+<tr class="memdesc:a5fd7cafa435f5347e02834a91d8f409a inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns TH2D's with pulseheight maps <br/></td></tr>
+<tr class="separator:a5fd7cafa435f5347e02834a91d8f409a inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7e51895a573e8df70fb6809d01161aa inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7e51895a573e8df70fb6809d01161aa"></a>
 std::vector&lt; TH2D * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#ae7e51895a573e8df70fb6809d01161aa">efficiencyMaps</a> (std::string name, uint16_t ntrig=10, uint16_t FLAGS=FLAG_FORCE_MASKED)</td></tr>
 <tr class="memdesc:ae7e51895a573e8df70fb6809d01161aa inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns TH2D's with hit maps <br/></td></tr>
 <tr class="separator:ae7e51895a573e8df70fb6809d01161aa inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06fc8334f8589d69bc735532bbbc4623 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top">std::vector&lt; TH1 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a06fc8334f8589d69bc735532bbbc4623">scurveMaps</a> (std::string dac, std::string name, int ntrig=10, int daclo=0, int dachi=255, int result=1, int ihit=1, int flag=FLAG_FORCE_MASKED|FLAG_FORCE_SERIAL)</td></tr>
-<tr class="separator:a06fc8334f8589d69bc735532bbbc4623 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b11b26ccf69919e630f6fb34fcc012 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top">std::vector&lt; TH1 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a47b11b26ccf69919e630f6fb34fcc012">scurveMaps</a> (std::string dac, std::string name, int ntrig=10, int daclo=0, int dachi=255, int dacsperstep=-1, int result=15, int ihit=1, int flag=FLAG_FORCE_MASKED)</td></tr>
+<tr class="separator:a47b11b26ccf69919e630f6fb34fcc012 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86df4d575bd8f8ba468c63793c5d9add inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86df4d575bd8f8ba468c63793c5d9add"></a>
 std::vector&lt; TH1 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a86df4d575bd8f8ba468c63793c5d9add">thrMaps</a> (std::string dac, std::string name, uint8_t dacmin, uint8_t dachi, int ntrig, uint16_t flag=0)</td></tr>
 <tr class="memdesc:a86df4d575bd8f8ba468c63793c5d9add inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns TH2D's for the threshold, the user flag argument is intended for selecting calS and will be OR'ed with other flags <br/></td></tr>
@@ -233,6 +249,33 @@ std::pair&lt; std::vector&lt; TH2D * &gt;<br class="typebreak"/>
 , std::vector&lt; TH2D * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#aaedc05be7dbd3a11ed3ac85da2af3104">xEfficiencyMaps</a> (std::string name, uint16_t ntrig, uint16_t FLAGS=FLAG_CHECK_ORDER|FLAG_FORCE_UNMASKED)</td></tr>
 <tr class="memdesc:aaedc05be7dbd3a11ed3ac85da2af3104 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return pixelAlive map and additional hit map when running with external source. <br/></td></tr>
 <tr class="separator:aaedc05be7dbd3a11ed3ac85da2af3104 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631c5d376f605861af85620030b60559 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a631c5d376f605861af85620030b60559"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a631c5d376f605861af85620030b60559">maskHotPixels</a> (std::vector&lt; TH2D * &gt;)</td></tr>
+<tr class="memdesc:a631c5d376f605861af85620030b60559 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine hot pixels with high occupancy <br/></td></tr>
+<tr class="separator:a631c5d376f605861af85620030b60559 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0176323481c14ad1392adb0d5fec2cce inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0176323481c14ad1392adb0d5fec2cce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a0176323481c14ad1392adb0d5fec2cce">resetROC</a> ()</td></tr>
+<tr class="memdesc:a0176323481c14ad1392adb0d5fec2cce inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">send reset to ROC(s) <br/></td></tr>
+<tr class="separator:a0176323481c14ad1392adb0d5fec2cce inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9b20226ebaece707917b4bcba36b4e inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade9b20226ebaece707917b4bcba36b4e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#ade9b20226ebaece707917b4bcba36b4e">resetTBM</a> ()</td></tr>
+<tr class="memdesc:ade9b20226ebaece707917b4bcba36b4e inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">send reset to TBM(s) <br/></td></tr>
+<tr class="separator:ade9b20226ebaece707917b4bcba36b4e inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d88c2d823011b2bcb38ce83c035797 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20d88c2d823011b2bcb38ce83c035797"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a20d88c2d823011b2bcb38ce83c035797">prepareDaq</a> (int triggerFreq, uint8_t trgTkDel)</td></tr>
+<tr class="memdesc:a20d88c2d823011b2bcb38ce83c035797 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">set up DAQ (including call to setTriggerFrequency) <br/></td></tr>
+<tr class="separator:a20d88c2d823011b2bcb38ce83c035797 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405f61ab70f5f669d9b60cd7d470d7e9 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a405f61ab70f5f669d9b60cd7d470d7e9"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a405f61ab70f5f669d9b60cd7d470d7e9">setTriggerFrequency</a> (int triggerFreq, uint8_t TrgTkDel)</td></tr>
+<tr class="memdesc:a405f61ab70f5f669d9b60cd7d470d7e9 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">set trigger frequence [kHz] and trigger token delay <br/></td></tr>
+<tr class="separator:a405f61ab70f5f669d9b60cd7d470d7e9 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a3c7464ae9d077713812df50aea4369 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a3c7464ae9d077713812df50aea4369"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a3a3c7464ae9d077713812df50aea4369">finalCleanup</a> ()</td></tr>
+<tr class="memdesc:a3a3c7464ae9d077713812df50aea4369 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">functions for DAQ <br/></td></tr>
+<tr class="separator:a3a3c7464ae9d077713812df50aea4369 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dc13582fe38456740ef6a793484709 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00dc13582fe38456740ef6a793484709"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pgToDefault</b> ()</td></tr>
+<tr class="separator:a00dc13582fe38456740ef6a793484709 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cf34ffb1e6ffd691a4641c0f89b2bd5 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cf34ffb1e6ffd691a4641c0f89b2bd5"></a>
 TH1D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a0cf34ffb1e6ffd691a4641c0f89b2bd5">bookTH1D</a> (std::string sname, std::string title, int nbins, double xmin, double xmax)</td></tr>
 <tr class="memdesc:a0cf34ffb1e6ffd691a4641c0f89b2bd5 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">book a TH1D, adding version information to the name and title <br/></td></tr>
@@ -253,10 +296,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a2bb03fcb1457c6e2a8ffba60fdd97f23">sparseRoc</a> (int npix=8)</td></tr>
 <tr class="memdesc:a2bb03fcb1457c6e2a8ffba60fdd97f23 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">select some pattern of pixels if not enabling the complete ROC. Enables the complete ROC if npix &gt; 999 <br/></td></tr>
 <tr class="separator:a2bb03fcb1457c6e2a8ffba60fdd97f23 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a523f53c5a14209988037f18173e595a8 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a523f53c5a14209988037f18173e595a8"></a>
-TH1D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a523f53c5a14209988037f18173e595a8">distribution</a> (TH2D *, int nbins, double xmin, double xmax, bool zeroSuppressed=false)</td></tr>
-<tr class="memdesc:a523f53c5a14209988037f18173e595a8 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a 1D distribution of a map <br/></td></tr>
-<tr class="separator:a523f53c5a14209988037f18173e595a8 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a43a68de3981f08a12d4d3c56028b77 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a43a68de3981f08a12d4d3c56028b77"></a>
+TH1D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a3a43a68de3981f08a12d4d3c56028b77">distribution</a> (TH2D *, int nbins, double xmin, double xmax)</td></tr>
+<tr class="memdesc:a3a43a68de3981f08a12d4d3c56028b77 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a 1D distribution of a map <br/></td></tr>
+<tr class="separator:a3a43a68de3981f08a12d4d3c56028b77 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c77dca1eeb452c9ee10b6fd6861bac5 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c77dca1eeb452c9ee10b6fd6861bac5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a9c77dca1eeb452c9ee10b6fd6861bac5">threshold</a> (TH1 *)</td></tr>
 <tr class="memdesc:a9c77dca1eeb452c9ee10b6fd6861bac5 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">fit an s-curve to a distribution. Fills fThreshold, fThresholdE, fSigma, fSigmaE <br/></td></tr>
@@ -314,6 +357,10 @@ std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom">
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a074a6c59654a72fc4321ac039dd6736d">setDacs</a> (std::string dacName, std::vector&lt; uint8_t &gt; dacVector)</td></tr>
 <tr class="memdesc:a074a6c59654a72fc4321ac039dd6736d inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">set on all ROCs the DAC dacName <br/></td></tr>
 <tr class="separator:a074a6c59654a72fc4321ac039dd6736d inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b6e67fc3291cb270c3ac29e5318d12 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2b6e67fc3291cb270c3ac29e5318d12"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#ab2b6e67fc3291cb270c3ac29e5318d12">getDacsString</a> (std::string dacName)</td></tr>
+<tr class="memdesc:ab2b6e67fc3291cb270c3ac29e5318d12 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">return from all ROCs the DAC dacName as a string <br/></td></tr>
+<tr class="separator:ab2b6e67fc3291cb270c3ac29e5318d12 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d9ed32adf408306cf07730653ef028e inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d9ed32adf408306cf07730653ef028e"></a>
 virtual TH1 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a1d9ed32adf408306cf07730653ef028e">moduleMap</a> (std::string histname)</td></tr>
 <tr class="memdesc:a1d9ed32adf408306cf07730653ef028e inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">combine all available ROC maps into a module map <br/></td></tr>
@@ -403,6 +450,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#acc360989384e39de77b7ad5548b1b53f">update</a> ()</td></tr>
 <tr class="memdesc:acc360989384e39de77b7ad5548b1b53f inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">signal to <a class="el" href="classPixTab.html">PixTab</a> to update the canvas <br/></td></tr>
 <tr class="separator:acc360989384e39de77b7ad5548b1b53f inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768c6cd9b0eb8aeef83c1dabbbc15b48 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a768c6cd9b0eb8aeef83c1dabbbc15b48"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a768c6cd9b0eb8aeef83c1dabbbc15b48">hvOff</a> ()</td></tr>
+<tr class="memdesc:a768c6cd9b0eb8aeef83c1dabbbc15b48 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">turn HV off <br/></td></tr>
+<tr class="separator:a768c6cd9b0eb8aeef83c1dabbbc15b48 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f64860a07408ba26e0123775afd153 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99f64860a07408ba26e0123775afd153"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a99f64860a07408ba26e0123775afd153">hvOn</a> ()</td></tr>
+<tr class="memdesc:a99f64860a07408ba26e0123775afd153 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">turn HV on <br/></td></tr>
+<tr class="separator:a99f64860a07408ba26e0123775afd153 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6439238bad87720ec678e32f7bf831 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe6439238bad87720ec678e32f7bf831"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#abe6439238bad87720ec678e32f7bf831">powerOff</a> ()</td></tr>
+<tr class="memdesc:abe6439238bad87720ec678e32f7bf831 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">turn DTB power off <br/></td></tr>
+<tr class="separator:abe6439238bad87720ec678e32f7bf831 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d55298a3e627e0a20440fd25b533b79 inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d55298a3e627e0a20440fd25b533b79"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a7d55298a3e627e0a20440fd25b533b79">powerOn</a> ()</td></tr>
+<tr class="memdesc:a7d55298a3e627e0a20440fd25b533b79 inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">turn DTB power on <br/></td></tr>
+<tr class="separator:a7d55298a3e627e0a20440fd25b533b79 inherit pub_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a7c44b494ab63308eacbc56875edd3f inherit pub_methods_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a7c44b494ab63308eacbc56875edd3f"></a>
 TH1 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a8a7c44b494ab63308eacbc56875edd3f">nextHist</a> ()</td></tr>
 <tr class="memdesc:a8a7c44b494ab63308eacbc56875edd3f inherit pub_methods_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">allow forward iteration through list of histograms <br/></td></tr>
@@ -432,10 +495,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 &#160;</td><td class="memItemRight" valign="bottom"><b>ClassDef</b> (<a class="el" href="classPixTest.html">PixTest</a>, 1)</td></tr>
 <tr class="separator:afaea83d8d683b274badd71e835d8cf5c inherit pro_methods_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classPixTest"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classPixTest')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classPixTest.html">PixTest</a></td></tr>
-<tr class="memitem:acddc44661904b5c55e33a9f09ed5607f inherit pro_attribs_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acddc44661904b5c55e33a9f09ed5607f"></a>
-<a class="el" href="classpxar_1_1api.html">pxar::api</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#acddc44661904b5c55e33a9f09ed5607f">fApi</a></td></tr>
-<tr class="memdesc:acddc44661904b5c55e33a9f09ed5607f inherit pro_attribs_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the API <br/></td></tr>
-<tr class="separator:acddc44661904b5c55e33a9f09ed5607f inherit pro_attribs_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072772938d1336e8b439eeeae4a5aed2 inherit pro_attribs_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a072772938d1336e8b439eeeae4a5aed2"></a>
+<a class="el" href="classpxar_1_1pxarCore.html">pxar::pxarCore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a072772938d1336e8b439eeeae4a5aed2">fApi</a></td></tr>
+<tr class="memdesc:a072772938d1336e8b439eeeae4a5aed2 inherit pro_attribs_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the API <br/></td></tr>
+<tr class="separator:a072772938d1336e8b439eeeae4a5aed2 inherit pro_attribs_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00e08fccb21d6de2bbe5a8e3f612137c inherit pro_attribs_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00e08fccb21d6de2bbe5a8e3f612137c"></a>
 <a class="el" href="classPixSetup.html">PixSetup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixTest.html#a00e08fccb21d6de2bbe5a8e3f612137c">fPixSetup</a></td></tr>
 <tr class="memdesc:a00e08fccb21d6de2bbe5a8e3f612137c inherit pro_attribs_classPixTest"><td class="mdescLeft">&#160;</td><td class="mdescRight">all necessary stuff in one place <br/></td></tr>
@@ -474,6 +537,9 @@ std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memitem:a3254d8823b10062cd4d757b23083c4f1 inherit pro_attribs_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3254d8823b10062cd4d757b23083c4f1"></a>
 std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fPhErrP1</b></td></tr>
 <tr class="separator:a3254d8823b10062cd4d757b23083c4f1 inherit pro_attribs_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5698d95fb96321625cd09496985e7d17 inherit pro_attribs_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5698d95fb96321625cd09496985e7d17"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>fNDaqErrors</b></td></tr>
+<tr class="separator:a5698d95fb96321625cd09496985e7d17 inherit pro_attribs_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95447bd53332381e0f07f214bb5aec3a inherit pro_attribs_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95447bd53332381e0f07f214bb5aec3a"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>fName</b></td></tr>
 <tr class="separator:a95447bd53332381e0f07f214bb5aec3a inherit pro_attribs_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -532,6 +598,17 @@ TTree *&#160;</td><td class="memItemRight" valign="bottom"><b>fTree</b></td></tr
 <tr class="memitem:a4a8eba15861dac41b2bdef86f2a7c6f6 inherit pro_attribs_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a8eba15861dac41b2bdef86f2a7c6f6"></a>
 TTimeStamp *&#160;</td><td class="memItemRight" valign="bottom"><b>fTimeStamp</b></td></tr>
 <tr class="separator:a4a8eba15861dac41b2bdef86f2a7c6f6 inherit pro_attribs_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b40b84f464b5bae3ebcf8a680f8f91 inherit pro_attribs_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8b40b84f464b5bae3ebcf8a680f8f91"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fProblem</b></td></tr>
+<tr class="separator:ad8b40b84f464b5bae3ebcf8a680f8f91 inherit pro_attribs_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9e3e1e562a3e48c0e6a589786e522c inherit pro_attribs_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee9e3e1e562a3e48c0e6a589786e522c"></a>
+std::vector&lt; std::pair<br class="typebreak"/>
+&lt; std::string, uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fPg_setup</b></td></tr>
+<tr class="separator:aee9e3e1e562a3e48c0e6a589786e522c inherit pro_attribs_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895b3a9764a7f65c7c7956c64bb572ec inherit pro_attribs_classPixTest"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a895b3a9764a7f65c7c7956c64bb572ec"></a>
+std::vector&lt; std::vector<br class="typebreak"/>
+&lt; std::pair&lt; int, int &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fHotPixels</b></td></tr>
+<tr class="separator:a895b3a9764a7f65c7c7956c64bb572ec inherit pro_attribs_classPixTest"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -543,7 +620,7 @@ TTimeStamp *&#160;</td><td class="memItemRight" valign="bottom"><b>fTimeStamp</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 26 2014 18:12:02 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 3 2015 10:03:48 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

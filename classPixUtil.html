@@ -95,18 +95,32 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a633bffd781605189e4f987ae884d6cd3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a633bffd781605189e4f987ae884d6cd3"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>setPlotStyle</b> ()</td></tr>
 <tr class="separator:a633bffd781605189e4f987ae884d6cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac158321d1a75cd88fad60d2b5766cc13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac158321d1a75cd88fad60d2b5766cc13"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>bothAreSpaces</b> (char lhs, char rhs)</td></tr>
-<tr class="separator:ac158321d1a75cd88fad60d2b5766cc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb169a1d443a81f66331e7217b388ece"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb169a1d443a81f66331e7217b388ece"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceAll</b> (std::string &amp;str, const std::string &amp;from, const std::string &amp;to)</td></tr>
-<tr class="separator:abb169a1d443a81f66331e7217b388ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a307fc5a4120ed02a6b6cadda3d80703e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a307fc5a4120ed02a6b6cadda3d80703e"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>dEff</b> (int in, int iN)</td></tr>
 <tr class="separator:a307fc5a4120ed02a6b6cadda3d80703e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be15c2515adea864bdb04371d2b1b29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0be15c2515adea864bdb04371d2b1b29"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>dBinomial</b> (int in, int iN)</td></tr>
 <tr class="separator:a0be15c2515adea864bdb04371d2b1b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650fbcb043425c171a0b58a0d990e12e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a650fbcb043425c171a0b58a0d990e12e"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixUtil.html#a650fbcb043425c171a0b58a0d990e12e">rcr2idx</a> (int iroc, int icol, int irow)</td></tr>
+<tr class="memdesc:a650fbcb043425c171a0b58a0d990e12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert ROC/COL/ROW into idx <br/></td></tr>
+<tr class="separator:a650fbcb043425c171a0b58a0d990e12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac642e711cf1e20bfecaffd05997c050c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac642e711cf1e20bfecaffd05997c050c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixUtil.html#ac642e711cf1e20bfecaffd05997c050c">idx2rcr</a> (int idx, int &amp;iroc, int &amp;icol, int &amp;irow)</td></tr>
+<tr class="memdesc:ac642e711cf1e20bfecaffd05997c050c"><td class="mdescLeft">&#160;</td><td class="mdescRight">and back again <br/></td></tr>
+<tr class="separator:ac642e711cf1e20bfecaffd05997c050c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba53dbd2797cf7377b97809f9d518563"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba53dbd2797cf7377b97809f9d518563"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixUtil.html#aba53dbd2797cf7377b97809f9d518563">cleanupString</a> (std::string &amp;)</td></tr>
+<tr class="memdesc:aba53dbd2797cf7377b97809f9d518563"><td class="mdescLeft">&#160;</td><td class="mdescRight">cleanup a string: remove everything behind #, concatenate multiple spaces into one, translate tabs into spaces <br/></td></tr>
+<tr class="separator:aba53dbd2797cf7377b97809f9d518563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb169a1d443a81f66331e7217b388ece"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb169a1d443a81f66331e7217b388ece"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixUtil.html#abb169a1d443a81f66331e7217b388ece">replaceAll</a> (std::string &amp;str, const std::string &amp;from, const std::string &amp;to)</td></tr>
+<tr class="memdesc:abb169a1d443a81f66331e7217b388ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">in str, replace all occurences of from to to <br/></td></tr>
+<tr class="separator:abb169a1d443a81f66331e7217b388ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac158321d1a75cd88fad60d2b5766cc13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac158321d1a75cd88fad60d2b5766cc13"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPixUtil.html#ac158321d1a75cd88fad60d2b5766cc13">bothAreSpaces</a> (char lhs, char rhs)</td></tr>
+<tr class="memdesc:ac158321d1a75cd88fad60d2b5766cc13"><td class="mdescLeft">&#160;</td><td class="mdescRight">what would you expect? <br/></td></tr>
+<tr class="separator:ac158321d1a75cd88fad60d2b5766cc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -118,7 +132,7 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>dBinomial</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 26 2014 18:12:05 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 3 2015 10:03:51 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

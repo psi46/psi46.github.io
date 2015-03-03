@@ -131,151 +131,156 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> readTbParameters();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> readRocDacs();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> readTbmDacs();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> writeAllFiles();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">bool</span> writeConfigParameterFile();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// NB: if you add a variable name after the second argument, the dictionary will not compile anymore??!?!</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">bool</span> writeDacParameterFile(<span class="keywordtype">int</span> iroc, std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; );</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">bool</span> writeTrimFile(<span class="keywordtype">int</span> iroc, std::vector&lt;pxar::pixelConfig&gt; );</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">bool</span> writeTbmParameterFile(<span class="keywordtype">int</span> itbm, std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; );</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">bool</span> writeTbParameterFile();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">bool</span> writeTestParameterFile(std::string test=<span class="stringliteral">&quot;all&quot;</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt; std::string dumpParameters(std::vector&lt;std::pair&lt;T1, T2&gt; &gt; v);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">static</span> <a class="code" href="classConfigParameters.html">ConfigParameters</a>* Singleton();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  std::string getTBParameterFileName()    {<span class="keywordflow">return</span> fTBParametersFileName;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::string getDACParameterFileName()   {<span class="keywordflow">return</span> fDACParametersFileName;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  std::string getTbmParameterFileName()   {<span class="keywordflow">return</span> fTbmParametersFileName;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  std::string getTrimParameterFileName()  {<span class="keywordflow">return</span> fTrimParametersFileName;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::string getTestParameterFileName()  {<span class="keywordflow">return</span> fTestParametersFileName;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::string getGainPedestalParameterFileName()  {<span class="keywordflow">return</span> fGainPedestalParameterFileName;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::string getGainPedestalFileName()   {<span class="keywordflow">return</span> fGainPedestalFileName;}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::string getTrimVcalSufix()          {<span class="keywordflow">return</span> fTrimVcalSuffix;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::string getRootFileName()           {<span class="keywordflow">return</span> fRootFileName;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  std::string getLogFileName()            {<span class="keywordflow">return</span> fLogFileName;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  std::string getMaskFileName()           {<span class="keywordflow">return</span> fMaskFileName;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::string getDebugFileName()          {<span class="keywordflow">return</span> fDebugFileName;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::string getDirectory()              {<span class="keywordflow">return</span> fDirectory;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::string getRocType()                {<span class="keywordflow">return</span> fRocType;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::string getTbmType()                {<span class="keywordflow">return</span> fTbmType;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::vector&lt;std::pair&lt;std::string,uint8_t&gt; &gt;  getTbParameters();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::vector&lt;std::pair&lt;std::string,double&gt; &gt;  getTbPowerSettings();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::vector&lt;std::pair&lt;std::string,uint8_t&gt; &gt;  getTbSigDelays();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  std::vector&lt;std::pair&lt;std::string,uint8_t&gt; &gt;  getTbPgSettings();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  std::vector&lt;std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; &gt; getTbmDacs();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  std::vector&lt;std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; &gt; getRocDacs();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  std::vector&lt;std::string&gt; getDacs();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; readDacFile(std::string fname);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> readTrimFile(std::string fname, std::vector&lt;pxar::pixelConfig&gt;&amp;);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  std::vector&lt;std::vector&lt;std::pair&lt;int, int&gt; &gt; &gt; readMaskFile(std::string fname);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  std::vector&lt;std::vector&lt;pxar::pixelConfig&gt; &gt; getRocPixelConfig();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  std::vector&lt;pxar::pixelConfig&gt; getRocPixelConfig(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">bool</span> setTbParameter(std::string, uint8_t);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">bool</span> setTbPowerSettings(std::string, <span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">bool</span> setTbmDac(std::string var, uint8_t val, <span class="keywordtype">int</span> itbm = -1);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">bool</span> setRocDac(std::string var, uint8_t val, <span class="keywordtype">int</span> iroc = -1);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">bool</span> setTrimBits(<span class="keywordtype">int</span> trim); </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span> setProbe(std::string probe, std::string value);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  std::string getProbe(std::string probe);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> setTBParameterFileName(std::string filename) {fTBParametersFileName = filename;}</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> setDACParameterFileName(std::string filename) {fDACParametersFileName = filename;}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> setTbmParameterFileName(std::string filename) {fTbmParametersFileName = filename;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">void</span> setTrimParameterFileName(std::string filename) {fTrimParametersFileName = filename;}</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> setTrimVcalSuffix(std::string name) {fTrimVcalSuffix = name;}</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span> setTestParameterFileName(std::string filename) {fTestParametersFileName = filename;}</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> setRootFileName(std::string filename) {fRootFileName = filename;}</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">void</span> setLogFileName(std::string filename) {fLogFileName = filename;}</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">void</span> setDebugFileName(std::string filename) {fMaskFileName = filename;}</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">void</span> setMaskFileName(std::string filename) {fDebugFileName = filename;}</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">void</span> setDirectory(std::string dirname) {fDirectory = dirname;}</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">void</span> setGuiMode(<span class="keywordtype">bool</span> a) {fGuiMode = a;}</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getNrocs() {<span class="keywordflow">return</span> fnRocs;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getNtbms() {<span class="keywordflow">return</span> fnTbms;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  std::vector&lt;int&gt; getSelectedRocs() {<span class="keywordflow">return</span> fSelectedRocs;}</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  std::vector&lt;int&gt; getSelectedTbms() {<span class="keywordflow">return</span> fSelectedTbms;}</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">void</span> setSelectedRocs(std::vector&lt;int&gt; v) {fSelectedRocs = v;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">void</span> setSelectedTbms(std::vector&lt;int&gt; v) {fSelectedTbms = v;}</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">void</span> readGainPedestalParameters(); </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">void</span> writeGainPedestalParameters(); </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">void</span> setGainPedestalParameters(std::vector&lt;std::vector&lt;gainPedestalParameters&gt; &gt;); </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  std::vector&lt;std::vector&lt;gainPedestalParameters&gt; &gt; getGainPedestalParameters(); </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">double</span> getIa() {<span class="keywordflow">return</span> ia;}</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">double</span> getId() {<span class="keywordflow">return</span> id;}</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">double</span> getVa() {<span class="keywordflow">return</span> va;}</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">double</span> getVd() {<span class="keywordflow">return</span> vd;}</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">bool</span>   getHvOn() {<span class="keywordflow">return</span> fHvOn;}</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  uint8_t getHubId() {<span class="keywordflow">return</span> fHubId;}</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> bothAreSpaces(<span class="keywordtype">char</span> lhs, <span class="keywordtype">char</span> rhs);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">void</span> replaceAll(std::string&amp; str, <span class="keyword">const</span> std::string&amp; from, <span class="keyword">const</span> std::string&amp; to);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">bool</span> fReadTbParameters, fReadTbmParameters, fReadDacParameters, fReadRocPixelConfig;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; fTbParameters;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  std::vector&lt;std::pair&lt;std::string, double&gt; &gt; fTbPowerSettings;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  std::vector&lt;std::pair&lt;uint16_t, uint8_t&gt; &gt; fTbPgSettings;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  std::vector&lt;std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; &gt; fTbmParameters, fDacParameters; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  std::vector&lt;std::vector&lt;pxar::pixelConfig&gt; &gt; fRocPixelConfigs; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  std::vector&lt;int&gt; fSelectedRocs, fSelectedTbms;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  std::vector&lt;std::vector&lt;gainPedestalParameters&gt; &gt; fGainPedestalParameters;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> readReadbackCal();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> writeAllFiles();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">bool</span> writeConfigParameterFile();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment">// NB: if you add a variable name after the second argument, the dictionary will not compile anymore??!?!</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">bool</span> writeDacParameterFile(<span class="keywordtype">int</span> iroc, std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; );</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">bool</span> writeTrimFile(<span class="keywordtype">int</span> iroc, std::vector&lt;pxar::pixelConfig&gt; );</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">bool</span> writeTbmParameterFile(<span class="keywordtype">int</span> itbm, </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                 std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; , </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                 std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; );</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">bool</span> writeTbParameterFile();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">bool</span> writeTestParameterFile(std::string test=<span class="stringliteral">&quot;all&quot;</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">bool</span> writeReadbackFile(<span class="keywordtype">int</span> iroc, std::vector&lt;std::pair&lt;std::string, double&gt; &gt; v);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">bool</span> writeMaskFile(std::vector&lt;std::vector&lt;std::pair&lt;int, int&gt; &gt; &gt; v, std::string name = <span class="stringliteral">&quot;&quot;</span>); </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">static</span> <a class="code" href="classConfigParameters.html">ConfigParameters</a>* Singleton();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::string getTBParameterFileName()    {<span class="keywordflow">return</span> fTBParametersFileName;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::string getDACParameterFileName()   {<span class="keywordflow">return</span> fDACParametersFileName;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::string getTbmParameterFileName()   {<span class="keywordflow">return</span> fTbmParametersFileName;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::string getTrimParameterFileName()  {<span class="keywordflow">return</span> fTrimParametersFileName;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::string getTestParameterFileName()  {<span class="keywordflow">return</span> fTestParametersFileName;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  std::string getGainPedestalParameterFileName()  {<span class="keywordflow">return</span> fGainPedestalParameterFileName;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  std::string getGainPedestalFileName()   {<span class="keywordflow">return</span> fGainPedestalFileName;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::string getTrimVcalSufix()          {<span class="keywordflow">return</span> fTrimVcalSuffix;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::string getRootFileName()           {<span class="keywordflow">return</span> fRootFileName;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::string getLogFileName()            {<span class="keywordflow">return</span> fLogFileName;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::string getMaskFileName()           {<span class="keywordflow">return</span> fMaskFileName;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  std::string getDebugFileName()          {<span class="keywordflow">return</span> fDebugFileName;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::string getDirectory()              {<span class="keywordflow">return</span> fDirectory;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::string getRocType()                {<span class="keywordflow">return</span> fRocType;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::string getTbmType()                {<span class="keywordflow">return</span> fTbmType;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  std::string getHdiType()                {<span class="keywordflow">return</span> fHdiType;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  std::string getTbName()                 {<span class="keywordflow">return</span> fTBName;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  std::vector&lt;std::pair&lt;std::string,uint8_t&gt; &gt;  getTbParameters();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  std::vector&lt;std::pair&lt;std::string,double&gt; &gt;  getTbPowerSettings();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  std::vector&lt;std::pair&lt;std::string,uint8_t&gt; &gt;  getTbSigDelays();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  std::vector&lt;std::pair&lt;std::string,uint8_t&gt; &gt;  getTbPgSettings();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  std::vector&lt;std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; &gt; getTbmDacs();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  std::vector&lt;std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; &gt; getRocDacs();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  std::vector&lt;std::vector&lt;std::pair&lt;std::string, double&gt; &gt; &gt; getReadbackCal();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  std::vector&lt;std::string&gt; getDacs();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; readDacFile(std::string fname);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  std::vector&lt;std::pair&lt;std::string, double&gt; &gt; readReadbackFile(std::string fname);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> readTrimFile(std::string fname, std::vector&lt;pxar::pixelConfig&gt;&amp;);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  std::vector&lt;std::vector&lt;std::pair&lt;int, int&gt; &gt; &gt; readMaskFile(std::string fname);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  std::vector&lt;std::vector&lt;pxar::pixelConfig&gt; &gt; getRocPixelConfig();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  std::vector&lt;pxar::pixelConfig&gt; getRocPixelConfig(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">bool</span> customI2cAddresses() {<span class="keywordflow">return</span> fI2cAddresses.size() &gt; 0;} </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  std::vector&lt;uint8_t&gt; getI2cAddresses() {<span class="keywordflow">return</span> fI2cAddresses;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">bool</span> setTbParameter(std::string, uint8_t, <span class="keywordtype">bool</span> appendIfNotFound = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">bool</span> setTbPowerSettings(std::string, <span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">bool</span> setTbmDac(std::string var, uint8_t val, <span class="keywordtype">int</span> itbm = -1);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">bool</span> setRocDac(std::string var, uint8_t val, <span class="keywordtype">int</span> iroc = -1);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">bool</span> setTrimBits(<span class="keywordtype">int</span> trim); </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">void</span> setProbe(std::string probe, std::string value);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  std::string getProbe(std::string probe);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">void</span> setTBParameterFileName(std::string filename) {fTBParametersFileName = filename;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">void</span> setDACParameterFileName(std::string filename) {fDACParametersFileName = filename;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">void</span> setTbmParameterFileName(std::string filename) {fTbmParametersFileName = filename;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">void</span> setTrimParameterFileName(std::string filename) {fTrimParametersFileName = filename;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">void</span> setTrimVcalSuffix(std::string name, <span class="keywordtype">bool</span> nocheck = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">void</span> setTestParameterFileName(std::string filename) {fTestParametersFileName = filename;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">void</span> setRootFileName(std::string filename) {fRootFileName = filename;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">void</span> setLogFileName(std::string filename) {fLogFileName = filename;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">void</span> setDebugFileName(std::string filename) {fMaskFileName = filename;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">void</span> setMaskFileName(std::string filename) {fDebugFileName = filename;}</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">void</span> setDirectory(std::string dirname) {fDirectory = dirname;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">void</span> setGuiMode(<span class="keywordtype">bool</span> a) {fGuiMode = a;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getNrocs() {<span class="keywordflow">return</span> fnRocs;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getNtbms() {<span class="keywordflow">return</span> fnTbms;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  std::vector&lt;int&gt; getSelectedRocs() {<span class="keywordflow">return</span> fSelectedRocs;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  std::vector&lt;int&gt; getSelectedTbms() {<span class="keywordflow">return</span> fSelectedTbms;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">void</span> setSelectedRocs(std::vector&lt;int&gt; v) {fSelectedRocs = v;}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">void</span> setSelectedTbms(std::vector&lt;int&gt; v) {fSelectedTbms = v;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">void</span> readGainPedestalParameters(); </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">void</span> writeGainPedestalParameters(); </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">void</span> setGainPedestalParameters(std::vector&lt;std::vector&lt;gainPedestalParameters&gt; &gt;); </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  std::vector&lt;std::vector&lt;gainPedestalParameters&gt; &gt; getGainPedestalParameters(); </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">double</span> getIa() {<span class="keywordflow">return</span> ia;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">double</span> getId() {<span class="keywordflow">return</span> id;}</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">double</span> getVa() {<span class="keywordflow">return</span> va;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">double</span> getVd() {<span class="keywordflow">return</span> vd;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">bool</span>   getHvOn() {<span class="keywordflow">return</span> fHvOn;}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  uint8_t getHubId() {<span class="keywordflow">return</span> fHubId;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> bothAreSpaces(<span class="keywordtype">char</span> lhs, <span class="keywordtype">char</span> rhs);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">void</span> replaceAll(std::string&amp; str, <span class="keyword">const</span> std::string&amp; from, <span class="keyword">const</span> std::string&amp; to);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">void</span> cleanupString(std::string&amp; str);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">void</span> readNrocs(std::string line);</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fnCol, fnRow, fnRocs, fnTbms, fnModules, fHubId;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">int</span> fCustomModule, fHalfModule;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">int</span> fEmptyReadoutLength, fEmptyReadoutLengthADC, fEmptyReadoutLengthADCDual, fTbmChannel;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">float</span> ia, id, va, vd;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">float</span> rocZeroAnalogCurrent;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  std::string fRocType, fTbmType;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  std::string fDirectory;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  std::string fTBName;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">bool</span> fHvOn, fTbmEnable, fTbmEmulator, fKeithleyRemote, fGuiMode;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  std::string fProbeA1,fProbeA2, fProbeD1, fProbeD2;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">bool</span> fReadTbParameters, fReadTbmParameters, fReadDacParameters, fReadRocPixelConfig, fReadReadbackCal;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; fTbParameters;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  std::vector&lt;std::pair&lt;std::string, double&gt; &gt; fTbPowerSettings;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  std::vector&lt;std::pair&lt;uint16_t, uint8_t&gt; &gt; fTbPgSettings;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  std::vector&lt;std::vector&lt;std::pair&lt;std::string, uint8_t&gt; &gt; &gt; fTbmParameters, fDacParameters;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  std::vector&lt;std::vector&lt;std::pair&lt;std::string, double&gt; &gt; &gt; fReadbackCal; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  std::vector&lt;std::vector&lt;pxar::pixelConfig&gt; &gt; fRocPixelConfigs; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  std::vector&lt;int&gt; fSelectedRocs, fSelectedTbms;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  std::string fTBParametersFileName;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  std::string fTrimVcalSuffix;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  std::string fDACParametersFileName;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  std::string fTbmParametersFileName;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  std::string fTrimParametersFileName;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  std::string fTestParametersFileName;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  std::string fRootFileName;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  std::string fLogFileName;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  std::string fMaskFileName;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  std::string fDebugFileName;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  std::string fGainPedestalFileName, fGainPedestalParameterFileName; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keyword">static</span> <a class="code" href="classConfigParameters.html">ConfigParameters</a>* fInstance;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  std::vector&lt;std::vector&lt;gainPedestalParameters&gt; &gt; fGainPedestalParameters;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fnCol, fnRow, fnRocs, fnTbms, fnModules, fHubId;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">int</span> fHalfModule;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  std::vector&lt;uint8_t&gt; fI2cAddresses; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">int</span> fEmptyReadoutLength, fEmptyReadoutLengthADC, fEmptyReadoutLengthADCDual, fTbmChannel;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">float</span> ia, id, va, vd;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">float</span> rocZeroAnalogCurrent;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  std::string fRocType, fTbmType, fHdiType;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  std::string fDirectory;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  std::string fTBName;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">bool</span> fHvOn, fTbmEnable, fTbmEmulator, fKeithleyRemote, fGuiMode;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  std::string fProbeA1,fProbeA2, fProbeD1, fProbeD2;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;};</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">// ----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt; std::string ConfigParameters::dumpParameters(std::vector&lt;std::pair&lt;T1, T2&gt; &gt; v) {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  std::stringstream line;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">typename</span> std::vector&lt;std::pair&lt;T1, T2&gt; &gt;::iterator it = v.begin(); it != v.end(); ++it) {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    line &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; it-&gt;first &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(it-&gt;second); </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  }</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordflow">return</span> line.str();</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  std::string fTBParametersFileName;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  std::string fTrimVcalSuffix;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  std::string fDACParametersFileName;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  std::string fTbmParametersFileName;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  std::string fTrimParametersFileName;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  std::string fTestParametersFileName;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  std::string fRootFileName;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  std::string fLogFileName;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  std::string fMaskFileName;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  std::string fDebugFileName;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  std::string fGainPedestalFileName, fGainPedestalParameterFileName; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  std::string fReadbackCalFileName;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keyword">static</span> <a class="code" href="classConfigParameters.html">ConfigParameters</a>* fInstance;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;};</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classConfigParameters_html"><div class="ttname"><a href="classConfigParameters.html">ConfigParameters</a></div><div class="ttdef"><b>Definition:</b> <a href="ConfigParameters_8hh_source.html#l00034">ConfigParameters.hh:34</a></div></div>
 <div class="ttc" id="structgainPedestalParameters_html"><div class="ttname"><a href="structgainPedestalParameters.html">gainPedestalParameters</a></div><div class="ttdef"><b>Definition:</b> <a href="ConfigParameters_8hh_source.html#l00029">ConfigParameters.hh:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 26 2014 18:11:57 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 3 2015 10:03:38 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

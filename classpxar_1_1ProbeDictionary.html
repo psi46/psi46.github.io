@@ -87,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpxar_1_1ProbeDictionary-members.html">List of all members</a>  </div>
@@ -99,12 +100,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8e3cfd7c98b12e64f6d98878725a462f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e3cfd7c98b12e64f6d98878725a462f"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>getSignal</b> (std::string name)</td></tr>
-<tr class="separator:a8e3cfd7c98b12e64f6d98878725a462f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e124723ec0c1c5d65d6ebaecfec55a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2e124723ec0c1c5d65d6ebaecfec55a"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> (uint8_t signal)</td></tr>
-<tr class="separator:ac2e124723ec0c1c5d65d6ebaecfec55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec29fbe3df9c6252c241ac92cfa1983"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acec29fbe3df9c6252c241ac92cfa1983"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>getSignal</b> (std::string name, uint8_t type)</td></tr>
+<tr class="separator:acec29fbe3df9c6252c241ac92cfa1983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc1fea1fd3c78e6a8c868e690c3f739b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc1fea1fd3c78e6a8c868e690c3f739b"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> (uint8_t signal, uint8_t type)</td></tr>
+<tr class="separator:adc1fea1fd3c78e6a8c868e690c3f739b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb1fbee6aabfd164c32636f28aed06eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb1fbee6aabfd164c32636f28aed06eb"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getAllNames</b> (uint8_t type)</td></tr>
+<tr class="separator:acb1fbee6aabfd164c32636f28aed06eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797514d64951dfd798da408368c34342"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a797514d64951dfd798da408368c34342"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getAllAnalogNames</b> ()</td></tr>
+<tr class="separator:a797514d64951dfd798da408368c34342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b215a90297632fa012b27b3ed600bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12b215a90297632fa012b27b3ed600bf"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getAllDigitalNames</b> ()</td></tr>
+<tr class="separator:a12b215a90297632fa012b27b3ed600bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -113,16 +123,16 @@ static <a class="el" href="classpxar_1_1ProbeDictionary.html">ProbeDictionary</a
 <tr class="separator:ad775ebcef7278dfb32475215384a0e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Map for DTB digital probe signal name lookup All signal names are lower case, check is case-insensitive. Singleton class, only one object of this floating around. </p>
+<div class="textblock"><p>Map for DTB analog &amp; digital probe signal name lookup All signal names are lower case, check is case-insensitive. Singleton class, only one object of this floating around. </p>
 
-<p>Definition at line <a class="el" href="dictionaries_8h_source.html#l00258">258</a> of file <a class="el" href="dictionaries_8h_source.html">dictionaries.h</a>.</p>
+<p>Definition at line <a class="el" href="dictionaries_8h_source.html#l00304">304</a> of file <a class="el" href="dictionaries_8h_source.html">dictionaries.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>core/utils/<a class="el" href="dictionaries_8h_source.html">dictionaries.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 26 2014 18:12:06 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 3 2015 10:03:53 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

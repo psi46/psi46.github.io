@@ -172,54 +172,52 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classPixTestFullTest.html#a43722dd6b8898e33a46b25ad9a9505bd">   83</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classPixTestFullTest.html#a43722dd6b8898e33a46b25ad9a9505bd">PixTestFullTest::doTest</a>() {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  bigBanner(Form(<span class="stringliteral">&quot;PixTestFullTest::doTest()&quot;</span>));</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="comment">//  fPixSetup-&gt;setMoreWebCloning(true);</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  vector&lt;string&gt; suite;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  suite.push_back(<span class="stringliteral">&quot;alive&quot;</span>); </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  suite.push_back(<span class="stringliteral">&quot;bumpbonding&quot;</span>); </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  suite.push_back(<span class="stringliteral">&quot;scurves&quot;</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  suite.push_back(<span class="stringliteral">&quot;trim&quot;</span>); </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  suite.push_back(<span class="stringliteral">&quot;phoptimization&quot;</span>); </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  suite.push_back(<span class="stringliteral">&quot;gainpedestal&quot;</span>); </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="classPixTest.html">PixTest</a> *t(0); </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">string</span> trimvcal(<span class="stringliteral">&quot;&quot;</span>); </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="classPixTestFactory.html">PixTestFactory</a> *factory = PixTestFactory::instance(); </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; suite.size(); ++i) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    t =  factory-&gt;createTest(suite[i], <a class="code" href="classPixTest.html#a00e08fccb21d6de2bbe5a8e3f612137c">fPixSetup</a>);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> (!suite[i].compare(<span class="stringliteral">&quot;trim&quot;</span>)) {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      trimvcal = t-&gt;<a class="code" href="classPixTest.html#a887966d0d7a9fc548d0009773833079e">getParameter</a>(<span class="stringliteral">&quot;vcal&quot;</span>); </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <a class="code" href="classPixTest.html#a00e08fccb21d6de2bbe5a8e3f612137c">fPixSetup</a>-&gt;getConfigParameters()-&gt;setTrimVcalSuffix(trimvcal); </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    t-&gt;<a class="code" href="classPixTest.html#a2279539fcc84f236f382f35b3b37b467">doTest</a>(); </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">delete</span> t; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="comment">//  fPixSetup-&gt;setMoreWebCloning(false);</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="ttc" id="classPixTest_html_a2279539fcc84f236f382f35b3b37b467"><div class="ttname"><a href="classPixTest.html#a2279539fcc84f236f382f35b3b37b467">PixTest::doTest</a></div><div class="ttdeci">virtual void doTest()</div><div class="ttdoc">function connected to &quot;DoTest&quot; button of PixTab </div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8cc_source.html#l00466">PixTest.cc:466</a></div></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  vector&lt;string&gt; suite;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  suite.push_back(<span class="stringliteral">&quot;alive&quot;</span>); </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  suite.push_back(<span class="stringliteral">&quot;bb&quot;</span>); </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  suite.push_back(<span class="stringliteral">&quot;scurves&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  suite.push_back(<span class="stringliteral">&quot;trim&quot;</span>); </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  suite.push_back(<span class="stringliteral">&quot;phoptimization&quot;</span>); </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  suite.push_back(<span class="stringliteral">&quot;gainpedestal&quot;</span>); </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="classPixTest.html">PixTest</a> *t(0); </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">string</span> trimvcal(<span class="stringliteral">&quot;&quot;</span>); </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="classPixTestFactory.html">PixTestFactory</a> *factory = PixTestFactory::instance(); </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; suite.size(); ++i) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    t =  factory-&gt;createTest(suite[i], <a class="code" href="classPixTest.html#a00e08fccb21d6de2bbe5a8e3f612137c">fPixSetup</a>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (!suite[i].compare(<span class="stringliteral">&quot;trim&quot;</span>)) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      trimvcal = t-&gt;<a class="code" href="classPixTest.html#a887966d0d7a9fc548d0009773833079e">getParameter</a>(<span class="stringliteral">&quot;vcal&quot;</span>); </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="classPixTest.html#a00e08fccb21d6de2bbe5a8e3f612137c">fPixSetup</a>-&gt;getConfigParameters()-&gt;setTrimVcalSuffix(trimvcal, <span class="keyword">true</span>); </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    t-&gt;<a class="code" href="classPixTest.html#aa5e1f97f2a2123a57728309b10e65da4">fullTest</a>(); </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">delete</span> t; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="ttc" id="classPixTestFullTest_html_ac94bfa69f3e03ce3e95a88944f957427"><div class="ttname"><a href="classPixTestFullTest.html#ac94bfa69f3e03ce3e95a88944f957427">PixTestFullTest::setToolTips</a></div><div class="ttdeci">void setToolTips()</div><div class="ttdoc">implement this to provide updated tool tips if the user changes test parameters </div><div class="ttdef"><b>Definition:</b> <a href="PixTestFullTest_8cc_source.html#l00061">PixTestFullTest.cc:61</a></div></div>
-<div class="ttc" id="classPixTest_html_a00e08fccb21d6de2bbe5a8e3f612137c"><div class="ttname"><a href="classPixTest.html#a00e08fccb21d6de2bbe5a8e3f612137c">PixTest::fPixSetup</a></div><div class="ttdeci">PixSetup * fPixSetup</div><div class="ttdoc">all necessary stuff in one place </div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8hh_source.html#l00251">PixTest.hh:251</a></div></div>
-<div class="ttc" id="classPixSetup_html"><div class="ttname"><a href="classPixSetup.html">PixSetup</a></div><div class="ttdef"><b>Definition:</b> <a href="PixSetup_8hh_source.html#l00012">PixSetup.hh:12</a></div></div>
-<div class="ttc" id="classPixTest_html_ac95757b60ed532065ed69ef75340c19f"><div class="ttname"><a href="classPixTest.html#ac95757b60ed532065ed69ef75340c19f">PixTest::fParameters</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; fParameters</div><div class="ttdoc">the parameters of this test </div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8hh_source.html#l00262">PixTest.hh:262</a></div></div>
+<div class="ttc" id="classPixTest_html_a00e08fccb21d6de2bbe5a8e3f612137c"><div class="ttname"><a href="classPixTest.html#a00e08fccb21d6de2bbe5a8e3f612137c">PixTest::fPixSetup</a></div><div class="ttdeci">PixSetup * fPixSetup</div><div class="ttdoc">all necessary stuff in one place </div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8hh_source.html#l00290">PixTest.hh:290</a></div></div>
+<div class="ttc" id="classPixSetup_html"><div class="ttname"><a href="classPixSetup.html">PixSetup</a></div><div class="ttdef"><b>Definition:</b> <a href="PixSetup_8hh_source.html#l00013">PixSetup.hh:13</a></div></div>
+<div class="ttc" id="classPixTest_html_aa5e1f97f2a2123a57728309b10e65da4"><div class="ttname"><a href="classPixTest.html#aa5e1f97f2a2123a57728309b10e65da4">PixTest::fullTest</a></div><div class="ttdeci">virtual void fullTest()</div><div class="ttdoc">function called when FullTest is running; most often this is simply calling doTest() ...</div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8cc_source.html#l00607">PixTest.cc:607</a></div></div>
+<div class="ttc" id="classPixTest_html_ac95757b60ed532065ed69ef75340c19f"><div class="ttname"><a href="classPixTest.html#ac95757b60ed532065ed69ef75340c19f">PixTest::fParameters</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; fParameters</div><div class="ttdoc">the parameters of this test </div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8hh_source.html#l00302">PixTest.hh:302</a></div></div>
 <div class="ttc" id="classPixTestFactory_html"><div class="ttname"><a href="classPixTestFactory.html">PixTestFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="PixTestFactory_8hh_source.html#l00009">PixTestFactory.hh:9</a></div></div>
 <div class="ttc" id="classPixTestFullTest_html_a43722dd6b8898e33a46b25ad9a9505bd"><div class="ttname"><a href="classPixTestFullTest.html#a43722dd6b8898e33a46b25ad9a9505bd">PixTestFullTest::doTest</a></div><div class="ttdeci">void doTest()</div><div class="ttdoc">function connected to &quot;DoTest&quot; button of PixTab </div><div class="ttdef"><b>Definition:</b> <a href="PixTestFullTest_8cc_source.html#l00083">PixTestFullTest.cc:83</a></div></div>
-<div class="ttc" id="classPixTest_html_ac9b395930660e93c2812ad70bb0f7b0e"><div class="ttname"><a href="classPixTest.html#ac9b395930660e93c2812ad70bb0f7b0e">PixTest::fDirectory</a></div><div class="ttdeci">TDirectory * fDirectory</div><div class="ttdoc">where the root histograms will end up </div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8hh_source.html#l00266">PixTest.hh:266</a></div></div>
-<div class="ttc" id="classPixTest_html_a887966d0d7a9fc548d0009773833079e"><div class="ttname"><a href="classPixTest.html#a887966d0d7a9fc548d0009773833079e">PixTest::getParameter</a></div><div class="ttdeci">bool getParameter(std::string parName, int &amp;)</div><div class="ttdoc">return by reference the INT value of a parameter </div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8cc_source.html#l00354">PixTest.cc:354</a></div></div>
+<div class="ttc" id="classPixTest_html_ac9b395930660e93c2812ad70bb0f7b0e"><div class="ttname"><a href="classPixTest.html#ac9b395930660e93c2812ad70bb0f7b0e">PixTest::fDirectory</a></div><div class="ttdeci">TDirectory * fDirectory</div><div class="ttdoc">where the root histograms will end up </div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8hh_source.html#l00306">PixTest.hh:306</a></div></div>
+<div class="ttc" id="classPixTest_html_a887966d0d7a9fc548d0009773833079e"><div class="ttname"><a href="classPixTest.html#a887966d0d7a9fc548d0009773833079e">PixTest::getParameter</a></div><div class="ttdeci">bool getParameter(std::string parName, int &amp;)</div><div class="ttdoc">return by reference the INT value of a parameter </div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8cc_source.html#l00450">PixTest.cc:450</a></div></div>
 <div class="ttc" id="classPixTestFullTest_html_ab837ac33db997359e1295eb93a84077a"><div class="ttname"><a href="classPixTestFullTest.html#ab837ac33db997359e1295eb93a84077a">PixTestFullTest::setParameter</a></div><div class="ttdeci">virtual bool setParameter(std::string parName, std::string sval)</div><div class="ttdoc">set the string value of a parameter </div><div class="ttdef"><b>Definition:</b> <a href="PixTestFullTest_8cc_source.html#l00030">PixTestFullTest.cc:30</a></div></div>
-<div class="ttc" id="classPixTest_html"><div class="ttname"><a href="classPixTest.html">PixTest</a></div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8hh_source.html#l00064">PixTest.hh:64</a></div></div>
+<div class="ttc" id="classPixTest_html"><div class="ttname"><a href="classPixTest.html">PixTest</a></div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8hh_source.html#l00065">PixTest.hh:65</a></div></div>
 <div class="ttc" id="classPixTestFullTest_html"><div class="ttname"><a href="classPixTestFullTest.html">PixTestFullTest</a></div><div class="ttdef"><b>Definition:</b> <a href="PixTestFullTest_8hh_source.html#l00006">PixTestFullTest.hh:6</a></div></div>
-<div class="ttc" id="classPixTest_html_a58ed254809211288ac2b0082be4dec73"><div class="ttname"><a href="classPixTest.html#a58ed254809211288ac2b0082be4dec73">PixTest::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">sets all test parameters </div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8cc_source.html#l00055">PixTest.cc:55</a></div></div>
+<div class="ttc" id="classPixTest_html_a58ed254809211288ac2b0082be4dec73"><div class="ttname"><a href="classPixTest.html#a58ed254809211288ac2b0082be4dec73">PixTest::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">sets all test parameters </div><div class="ttdef"><b>Definition:</b> <a href="PixTest_8cc_source.html#l00062">PixTest.cc:62</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 26 2014 18:11:56 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 3 2015 10:03:37 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

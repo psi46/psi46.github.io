@@ -133,25 +133,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classpxar_1_1DataMissingEvent.html">DataMissingEvent</a>(<span class="keyword">const</span> std::string&amp; what_arg, uint32_t nmiss) : <a class="code" href="classpxar_1_1pxarException.html">pxarException</a>(what_arg), numberMissing(nmiss) {}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  };</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classpxar_1_1DataDecoderError.html">   70</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classpxar_1_1DataDecoderError.html">DataDecoderError</a> : <span class="keyword">public</span> <a class="code" href="classpxar_1_1pxarException.html">pxarException</a> {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classpxar_1_1DataDecoderError.html">DataDecoderError</a>(<span class="keyword">const</span> std::string&amp; what_arg) : <a class="code" href="classpxar_1_1pxarException.html">pxarException</a>(what_arg) {}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  };</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <span class="comment">//namespace pxar</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PXAR_EXCEPTIONS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classpxar_1_1DataDecodingError.html">   69</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classpxar_1_1DataDecodingError.html">DataDecodingError</a> : <span class="keyword">public</span> <a class="code" href="classpxar_1_1pxarException.html">pxarException</a> {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classpxar_1_1DataDecodingError.html">DataDecodingError</a>(<span class="keyword">const</span> std::string&amp; what_arg) : <a class="code" href="classpxar_1_1pxarException.html">pxarException</a>(what_arg) {}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  };</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classpxar_1_1DataInvalidAddressError.html">   77</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classpxar_1_1DataInvalidAddressError.html">DataInvalidAddressError</a> : <span class="keyword">public</span> <a class="code" href="classpxar_1_1DataDecodingError.html">DataDecodingError</a> {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classpxar_1_1DataInvalidAddressError.html">DataInvalidAddressError</a>(<span class="keyword">const</span> std::string&amp; what_arg) : <a class="code" href="classpxar_1_1DataDecodingError.html">DataDecodingError</a>(what_arg) {}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  };</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classpxar_1_1DataInvalidPulseheightError.html">   85</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classpxar_1_1DataInvalidPulseheightError.html">DataInvalidPulseheightError</a> : <span class="keyword">public</span> <a class="code" href="classpxar_1_1DataDecodingError.html">DataDecodingError</a> {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classpxar_1_1DataInvalidPulseheightError.html">DataInvalidPulseheightError</a>(<span class="keyword">const</span> std::string&amp; what_arg) : <a class="code" href="classpxar_1_1DataDecodingError.html">DataDecodingError</a>(what_arg) {}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  };</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classpxar_1_1DataCorruptBufferError.html">   93</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classpxar_1_1DataCorruptBufferError.html">DataCorruptBufferError</a> : <span class="keyword">public</span> <a class="code" href="classpxar_1_1DataDecodingError.html">DataDecodingError</a> {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classpxar_1_1DataCorruptBufferError.html">DataCorruptBufferError</a>(<span class="keyword">const</span> std::string&amp; what_arg) : <a class="code" href="classpxar_1_1DataDecodingError.html">DataDecodingError</a>(what_arg) {}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  };</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <span class="comment">//namespace pxar</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PXAR_EXCEPTIONS_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="classpxar_1_1InvalidConfig_html"><div class="ttname"><a href="classpxar_1_1InvalidConfig.html">pxar::InvalidConfig</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00031">exceptions.h:31</a></div></div>
-<div class="ttc" id="classpxar_1_1DataDecoderError_html"><div class="ttname"><a href="classpxar_1_1DataDecoderError.html">pxar::DataDecoderError</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00070">exceptions.h:70</a></div></div>
 <div class="ttc" id="classpxar_1_1pxarException_html"><div class="ttname"><a href="classpxar_1_1pxarException.html">pxar::pxarException</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00015">exceptions.h:15</a></div></div>
 <div class="ttc" id="classpxar_1_1FirmwareVersionMismatch_html"><div class="ttname"><a href="classpxar_1_1FirmwareVersionMismatch.html">pxar::FirmwareVersionMismatch</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00039">exceptions.h:39</a></div></div>
 <div class="ttc" id="classpxar_1_1DataMissingEvent_html"><div class="ttname"><a href="classpxar_1_1DataMissingEvent.html">pxar::DataMissingEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00061">exceptions.h:61</a></div></div>
+<div class="ttc" id="classpxar_1_1DataCorruptBufferError_html"><div class="ttname"><a href="classpxar_1_1DataCorruptBufferError.html">pxar::DataCorruptBufferError</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00093">exceptions.h:93</a></div></div>
+<div class="ttc" id="classpxar_1_1DataInvalidPulseheightError_html"><div class="ttname"><a href="classpxar_1_1DataInvalidPulseheightError.html">pxar::DataInvalidPulseheightError</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00085">exceptions.h:85</a></div></div>
 <div class="ttc" id="classpxar_1_1UsbConnectionTimeout_html"><div class="ttname"><a href="classpxar_1_1UsbConnectionTimeout.html">pxar::UsbConnectionTimeout</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00054">exceptions.h:54</a></div></div>
+<div class="ttc" id="classpxar_1_1DataInvalidAddressError_html"><div class="ttname"><a href="classpxar_1_1DataInvalidAddressError.html">pxar::DataInvalidAddressError</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00077">exceptions.h:77</a></div></div>
 <div class="ttc" id="classpxar_1_1UsbConnectionError_html"><div class="ttname"><a href="classpxar_1_1UsbConnectionError.html">pxar::UsbConnectionError</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00047">exceptions.h:47</a></div></div>
+<div class="ttc" id="classpxar_1_1DataDecodingError_html"><div class="ttname"><a href="classpxar_1_1DataDecodingError.html">pxar::DataDecodingError</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00069">exceptions.h:69</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 26 2014 18:11:54 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 3 2015 10:03:37 for pxar by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
